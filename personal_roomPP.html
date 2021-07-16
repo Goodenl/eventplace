@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/css-light-grid@1.1.3/css-light-grid.min.css" />
+    
+    <!-- Useful meta tags -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="index, follow">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    
+    <title>personal room PP</title>
+</head>
+<body>
+
+  <div class="page" id="page">
+  	<!-- Header -->
+  	<header class="header">
+  		<div class="container">
+  			<div class="header__wrapper">
+  				<a href="/">
+  					<img class="logo" src="../assets/images/logo.svg" alt="Логотип">
+  				</a>
+  	
+  				<div class="language__box">
+  					<img src="../assets/images/language.svg" alt="Язык" class="language__img">
+  				</div>
+  				<button class="btn-menu persona__box">
+  					<img class="burger" src="../assets/images/burger.svg" alt="Меню">
+  					<img src="../assets/images/persona.jpg" alt="Вы">
+  				</button>
+  			</div>
+  		</div>
+  	</header>
+		<!-- Main -->
+		<main class="content">
+			<div class="container">
+		 		
+		 		<h1 class="personal-room__header">Личный кабинет</h1>
+		 		
+		 		<div class="personal-room__box">
+		 			<nav class="personal-room__nav">
+		 				<ul class="personal-room__nav-list">
+		 					<li class="personal-room__nav-item active">
+		 						<img src="../assets/images/nav/profile.svg" alt="">
+		 						<p>Профиль</p>
+		 					</li>
+		 					<li class="personal-room__nav-item">
+		 						<img src="../assets/images/nav/messages.svg" alt="">
+		 						<p>Сообщения</p>
+		 					</li>
+		 					<li class="personal-room__nav-item">
+		 						<img src="../assets/images/nav/events.svg" alt="">
+		 						<p>Мероприятия</p>
+		 					</li>
+		 					<li class="personal-room__nav-item">
+		 						<img src="../assets/images/nav/likedPlace.svg" alt="">
+		 						<p>Понравившиеся места</p>
+		 					</li>
+		 					<li class="personal-room__nav-item">
+		 						<img src="../assets/images/nav/rating.svg" alt="">
+		 						<p>Оценки</p>
+		 					</li>
+		 				</ul>
+		 			</nav>
+		 		
+		 			<h2 class="personal-room__title">Режим редактирования объявления #1234</h2>
+		 		
+		 			<div class="grid gap-s no-xp personal-room__content">
+		 				<div class="col-4">
+		 					<h3>Информация</h3>
+		 		
+		 					<span class="form__title">Название:</span>
+		 					<div class="form__group PP">
+		 					  <input type="text" class="form__field mb-15" placeholder="Название вашей площадки" name="name" />
+		 					  <label for="name" class="form__label">Название вашей площадки</label>
+		 		
+		 					  <select class="form__field mw-50" name="" id="">
+		 					  	<option value="Площадка">Тип площадки</option>
+		 					  </select>
+		 					</div>
+		 		
+		 		
+		 					<div class="personal-room__group">
+		 						<div class="d-flex mb-15">
+		 							<img src="../assets/images/icons/area.svg" alt="">
+		 							<h4>Площадь</h4>
+		 						</div>
+		 						<div class="d-flex">
+		 							<input type="text" class="form__field mb-15" name="name" />
+		 							<h4>м²</h4>
+		 						</div>
+		 					</div>	
+		 		
+		 					<div class="personal-room__group">
+		 						<div class="d-flex mb-15">
+		 							<img src="../assets/images/icons/count-guest.svg" alt="">
+		 							<h4>Количество гостей</h4>
+		 						</div>
+		 						<div class="d-flex ">
+		 							<h4 class="no-ml">до</h4>
+		 							<input type="text" class="form__field mb-15" name="name" />
+		 						</div>
+		 					</div>	
+		 		
+		 					<div class="personal-room__group">
+		 						<div class="d-flex mb-15">
+		 							<img src="../assets/images/icons/near-stop.svg" alt="">
+		 							<h4>Ближайшая остановка</h4>
+		 						</div>
+		 						<div class="d-flex">
+		 							<input type="text" class="form__field mb-15" name="name" />
+		 						</div>
+		 					</div>
+		 		
+		 					<div class="personal-room__group">
+		 						<div class="d-flex mb-15">
+		 							<img src="../assets/images/icons/clock.svg" alt="">
+		 							<h4>Время ходьбы до отсановки</h4>
+		 						</div>
+		 						<div class="d-flex">
+		 							<input type="text" class="form__field mb-15" name="name" />
+		 							<h4>минут</h4>
+		 						</div>
+		 					</div>
+		 				</div>
+		 		
+		 		
+		 				<div class="col-5">
+		 					<h3>Общие сведенья</h3>
+		 		
+		 					<div class="form__group PP">
+		 						<select class="form__field" name="" id="">
+		 					  	<option value="Площадка">Вид кухни</option>
+		 					  </select>
+		 					  <select class="form__field" name="" id="">
+		 					  	<option value="Площадка">Вид площадки</option>
+		 					  </select>
+		 					  <select class="form__field" name="" id="">
+		 					  	<option value="Площадка">Стиль интерьера</option>
+		 					  </select>
+		 					  <select class="form__field" name="" id="">
+		 					  	<option value="Площадка">Имитация</option>
+		 					  </select>
+		 					  <select class="form__field" name="" id="">
+		 					  	<option value="Площадка">О месте</option>
+		 					  </select>
+		 		
+		 					  <h4 class="select-recomend">Рекомендуемые мероприятия</h4>
+		 		
+		 					   <select class="form__field" name="" id="">
+		 					  	<option value="Площадка">Выбрать мероприятие</option>
+		 					  </select>
+		 					</div>
+		 				</div>
+		 			</div>
+		 		
+		 			<h4>Режим работы:</h4>
+		 			<ul class="d-flex work-mode">
+		 				<li class="d-flex f-column">
+		 					<h4>Пн</h4>
+		 					<input type="text" class="form__field form__field--mode-work" name="name" />
+		 				</li>
+		 				<li class="d-flex f-column">
+		 					<h4>Вт</h4>
+		 					<input type="text" class="form__field form__field--mode-work" name="name" />
+		 				</li>
+		 				<li class="d-flex f-column">
+		 					<h4>Ср</h4>
+		 					<input type="text" class="form__field form__field--mode-work" name="name" />
+		 				</li>
+		 				<li class="d-flex f-column">
+		 					<h4>Чт</h4>
+		 					<input type="text" class="form__field form__field--mode-work" name="name" />
+		 				</li>
+		 				<li class="d-flex f-column">
+		 					<h4>Пт</h4>
+		 					<input type="text" class="form__field form__field--mode-work" name="name" />
+		 				</li>
+		 				<li class="d-flex f-column">
+		 					<h4>Сб</h4>
+		 					<input type="text" class="form__field form__field--mode-work" name="name" />
+		 				</li>
+		 				<li class="d-flex f-column">
+		 					<h4>Вс</h4>
+		 					<input type="text" class="form__field form__field--mode-work" name="name" />
+		 				</li>
+		 			</ul>
+		 		
+		 			<h3>Правила</h3>
+		 			<div class="grid rule">
+		 				<div class="col-4">
+		 					<div class="d-flex rule__item">
+		 						<label class="d-flex">
+		 							<input type="checkbox">
+		 							<span class="checkmark"></span>
+		 							<p class="rule__text">Депозит</p>
+		 						</label>
+		 		
+		 						<div class="rule__box">
+		 							<input type="text" class="form__field">
+		 							<button class="btn-confirm"><img src="../assets/images/icons/confirm.svg" alt=""></button>
+		 							<button class="btn-cancel"><img src="../assets/images/icons/remove.svg" alt=""></button>
+		 						</div>	
+		 					</div>
+		 		
+		 					<div class="d-flex rule__item">
+		 						<label class="d-flex">
+		 							<input type="checkbox">
+		 							<span class="checkmark"></span>
+		 							<p class="rule__text">Залог </p>
+		 						</label>
+		 		
+		 						<div class="rule__box">
+		 							<input type="text" class="form__field">
+		 							<button class="btn-confirm"><img src="../assets/images/icons/confirm.svg" alt=""></button>
+		 							<button class="btn-cancel"><img src="../assets/images/icons/remove.svg" alt=""></button>
+		 						</div>	
+		 					</div>
+		 		
+		 					<div class="d-flex rule__item">
+		 						<label class="d-flex">
+		 							<input type="checkbox">
+		 							<span class="checkmark"></span>
+		 							<p class="rule__text">Кейтеринг</p>
+		 						</label>
+		 		
+		 						<div class="rule__box">
+		 							<button class="btn-confirm"><img src="../assets/images/icons/confirm.svg" alt=""></button>
+		 							<button class="btn-cancel"><img src="../assets/images/icons/remove.svg" alt=""></button>
+		 						</div>	
+		 					</div>
+		 				</div>
+		 		
+		 				<div class="col-4">
+		 					<div class="d-flex rule__item">
+		 						<label class="d-flex">
+		 							<input type="checkbox">
+		 							<span class="checkmark"></span>
+		 							<p class="rule__text">Еда и напитки </p>
+		 						</label>
+		 		
+		 						<div class="rule__box">
+		 							<input type="text" class="form__field">
+		 							<button class="btn-confirm"><img src="../assets/images/icons/confirm.svg" alt=""></button>
+		 							<button class="btn-cancel"><img src="../assets/images/icons/remove.svg" alt=""></button>
+		 						</div>	
+		 					</div>
+		 		
+		 					<div class="d-flex rule__item">
+		 						<label class="d-flex">
+		 							<input type="checkbox">
+		 							<span class="checkmark"></span>
+		 							<p class="rule__text">Шум после 23:00  </p>
+		 						</label>
+		 		
+		 						<div class="rule__box">
+		 							<button class="btn-confirm"><img src="../assets/images/icons/confirm.svg" alt=""></button>
+		 							<button class="btn-cancel"><img src="../assets/images/icons/remove.svg" alt=""></button>
+		 						</div>	
+		 					</div>
+		 		
+		 					<div class="d-flex rule__item">
+		 						<label class="d-flex">
+		 							<input type="checkbox">
+		 							<span class="checkmark"></span>
+		 							<p class="rule__text">Курение можно</p>
+		 						</label>
+		 		
+		 						<div class="rule__box">
+		 							<button class="btn-confirm"><img src="../assets/images/icons/confirm.svg" alt=""></button>
+		 							<button class="btn-cancel"><img src="../assets/images/icons/remove.svg" alt=""></button>
+		 						</div>	
+		 					</div>
+		 				</div>
+		 				<div class="col-4">
+		 					<div class="d-flex rule__item">
+		 						<label class="d-flex">
+		 							<input type="checkbox">
+		 							<span class="checkmark"></span>
+		 							<p class="rule__text">Домашние животные </p>
+		 						</label>
+		 		
+		 						<div class="rule__box">
+		 							<input type="text" class="form__field">
+		 							<button class="btn-confirm"><img src="../assets/images/icons/confirm.svg" alt=""></button>
+		 							<button class="btn-cancel"><img src="../assets/images/icons/remove.svg" alt=""></button>
+		 						</div>	
+		 					</div>
+		 		
+		 					<div class="d-flex rule__item">
+		 						<label class="d-flex">
+		 							<input type="checkbox">
+		 							<span class="checkmark"></span>
+		 							<p class="rule__text">Шум после 23:00  </p>
+		 						</label>
+		 		
+		 						<div class="rule__box">
+		 							<button class="btn-confirm"><img src="../assets/images/icons/confirm.svg" alt=""></button>
+		 							<button class="btn-cancel"><img src="../assets/images/icons/remove.svg" alt=""></button>
+		 						</div>	
+		 					</div>
+		 		
+		 					<div class="d-flex rule__item">
+		 						<label class="d-flex">
+		 							<input type="checkbox">
+		 							<span class="checkmark"></span>
+		 							<p class="rule__text">Администратор на площадке </p>
+		 						</label>
+		 		
+		 						<div class="rule__box">
+		 							<button class="btn-confirm"><img src="../assets/images/icons/confirm.svg" alt=""></button>
+		 							<button class="btn-cancel"><img src="../assets/images/icons/remove.svg" alt=""></button>
+		 						</div>	
+		 					</div>
+		 				</div>
+		 			</div>
+		 		
+		 			<h3 class="mb-30">Схема зала</h3>
+		 		
+		 			<button class="btn btn--white btn--sm">+ Загрузить схему</button>
+		 		
+		 			<img class="scheme__img" src="../assets/images/schem.jpg" alt="">
+		 		</div>
+			</div>
+		</main>
+  </div>
+
+  <!-- JS -->
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
