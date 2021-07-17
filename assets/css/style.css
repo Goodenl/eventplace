@@ -440,8 +440,16 @@ label {
     flex-direction: column;
 }
 
+.mb-10 {
+    margin-bottom: 1rem !important;
+}
+
 .mb-15 {
     margin-bottom: 1.5rem;
+}
+
+.mb-20 {
+    margin-bottom: 2rem;
 }
 
 .mb-30 {
@@ -634,7 +642,14 @@ label {
 }
 
 .btn--sm {
+    width: 100%;
     max-width: 22rem;
+    padding: 1.1rem 0;
+}
+
+.btn--xsm {
+    width: 100%;
+    max-width: 12.5rem;
     padding: 1.1rem 0;
 }
 
@@ -769,8 +784,14 @@ label {
 
 .form__group {
     position: relative;
-    margin-bottom: 18px;
+    margin-bottom: 2rem;
     width: 100%;
+}
+
+.form__group--md {
+    text-align: center;
+    max-width: 10.5rem;
+    margin-right: 3rem;
 }
 
 .form__field {
@@ -836,6 +857,26 @@ label {
     height: 5.6rem;
     padding: 1.85rem 1.4rem;
     border-radius: 8px;
+}
+
+.form__field--tingh {
+    width: 55rem !important;
+    height: 4rem !important;
+}
+
+.form__field--md {
+    min-width: 10.5rem !important;
+    max-width: 10.5rem !important;
+}
+
+.form__field--sm {
+    min-width: 8rem !important;
+    max-width: 8rem !important;
+}
+
+.form__field--xsm {
+    min-width: 4.5rem !important;
+    max-width: 4.5rem !important;
 }
 
 .form__label {
@@ -942,6 +983,14 @@ span.checkmark {
     padding-top: 9.8rem;
     background-color: #ffffff;
     position: relative;
+}
+
+.personal-room__box--PP .form__field {
+    border-radius: 8px;
+}
+
+.personal-room__box--PP select.form__field {
+    height: 5.6rem;
 }
 
 .personal-room__nav-list {
@@ -1189,6 +1238,26 @@ span.checkmark {
     margin-left: 2rem;
 }
 
+.personal-room__group--params h4 {
+    font-size: 14px;
+    color: #5E7979;
+    font-weight: 400;
+    margin-left: 1rem;
+    margin-right: 2rem;
+}
+
+.personal-room__group--params h4:nth-last-child(3), .personal-room__group--params h4:nth-last-child(2) {
+    margin-left: -1rem;
+}
+
+.personal-room__group--params .form__field {
+    margin-right: 1rem;
+}
+
+.personal-room__group--params img {
+    margin-right: 2rem;
+}
+
 .no-ml {
     margin-left: 0 !important;
     margin-right: 2rem;
@@ -1257,4 +1326,284 @@ span.checkmark {
 .scheme__img {
     width: 481px;
     height: auto;
+}
+
+.nested__btn-box {
+    gap: 3rem;
+    margin-bottom: 3rem;
+}
+
+.nested__photo-list {
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    gap: 2.6rem;
+    margin-bottom: 6rem;
+}
+
+.nested__photo-wrap {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.tarif__name {
+    height: 5.6rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.tarif__description {
+    height: 5.6rem;
+    margin-bottom: 5rem;
+}
+
+.tarif__setting {
+    margin-bottom: 3rem;
+}
+
+.tarif__setting:nth-child(2) {
+    margin-top: 1.5rem;
+}
+
+.tarif__setting h4 {
+    margin-left: 0;
+}
+
+.tarif__setting .form__field {
+    width: 10.3rem;
+    text-align: center;
+}
+
+.params .form__field {
+    min-width: 17.2rem;
+    height: 5.6rem;
+    margin-top: 0;
+    width: 0;
+}
+
+.params .grey-text {
+    margin-bottom: 0;
+    margin-right: 2rem;
+}
+
+.params--park {
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+}
+
+.params--park .form__field {
+    margin-right: 2rem;
+}
+
+.widget {
+    margin-bottom: 5rem;
+}
+
+.widget select.form__field {
+    margin-top: 0;
+    width: 11.8rem;
+}
+
+.widget .form__field {
+    width: 24rem;
+    height: 5.6rem;
+}
+
+.widget .action-btn {
+    cursor: pointer;
+}
+
+.widget .add-picture {
+    margin-bottom: 2rem;
+}
+
+.widget .add-picture p {
+    margin-right: 1.4rem;
+    margin-bottom: 0;
+}
+
+.widget .price {
+    margin-bottom: 2rem;
+}
+
+.widget .price p {
+    margin-right: 2rem;
+    margin-bottom: 0;
+}
+
+.widget.last {
+    margin-bottom: 3rem;
+}
+
+.edit-btn {
+    margin-left: 2.1rem;
+    margin-right: 3.2rem;
+}
+
+.price-setting__title {
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+
+.price-setting > .d-flex {
+    margin-bottom: 2rem;
+}
+
+.price-setting .grey-text {
+    margin-right: 2rem;
+    margin-bottom: 0;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #A9A9A9;
+}
+
+.price-setting .grey-text .black {
+    color: #222222;
+}
+
+.price-setting__interval .form__field {
+    height: 5.6rem;
+    margin-left: 1.5rem;
+}
+
+.price-setting__interval .form__field:nth-last-child(2) {
+    margin-right: 0.8rem;
+}
+
+.price-setting__interval .defis {
+    width: 1.4rem;
+    color: #b0b0b0;
+    font-size: 3.2rem;
+    margin-left: .3rem;
+}
+
+.price-setting__volume .form__field {
+    margin-right: 1.5rem;
+}
+
+.price-setting__extra-switcher .btn-confirm {
+    margin-right: 1rem;
+}
+
+.price-setting__extra-check span {
+    margin-left: 1.2rem;
+}
+
+.price-setting__price select {
+    margin-left: 1rem;
+}
+
+.price-setting__price .form__field {
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 5.6rem;
+}
+
+.price-setting__price .grey-text {
+    color: #A9A9A9;
+    font-weight: 400;
+}
+
+.price-setting__price .grey-text:last-child {
+    margin-left: auto;
+}
+
+.price-setting__price .grey-text:last-child span {
+    font-size: 2rem;
+    line-height: normal;
+    color: #363636;
+    font-weight: 500;
+    margin-left: 2rem;
+}
+
+.tip {
+    padding: 3rem;
+    margin-right: -20px;
+    margin-bottom: 4.6rem;
+    border: 1px solid #DDDDDD;
+    border-radius: 8px;
+}
+
+.tip .tip__title {
+    font-size: 1.6rem;
+    color: #484848;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+.tip .tip__text {
+    font-size: 1.4rem;
+    color: #484848;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+}
+
+.price-setting__realize {
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+.price-setting__realize .grey-text {
+    margin-bottom: 2rem;
+}
+
+.price-setting__realize-input:not(:last-child) {
+    margin-bottom: 2rem;
+}
+
+.price-setting__realize-input p {
+    margin-left: 2rem;
+    color: #363636;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.price-setting__realize-input span {
+    font-size: 1.1rem;
+    color: #222;
+    position: relative;
+    top: -4px;
+}
+
+.price-setting__realize-input input {
+    width: 24px;
+    height: 24px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 3px;
+    background-color: transparent;
+    border: 1px solid #B0B0B0;
+}
+
+.price-setting__realize-input input:checked {
+    border: #73D649;
+    background-color: #73D649;
+}
+
+.price-setting__realize-input input:checked::before {
+    content: url("../../assets/images/icons/confirm.svg");
+}
+
+table.table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    height: auto;
+}
+
+table.table, table.table td, table.table th {
+    border: 1px solid #595959;
+}
+
+table.table td, table.table th {
+    min-height: 35px;
+    padding: 3px;
+    width: 30px;
+    height: 35px;
+}
+
+table.table th {
+    background: transparent;
+    color: #fff;
+    font-weight: normal;
 }
