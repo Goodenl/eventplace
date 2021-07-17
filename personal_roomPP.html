@@ -42,7 +42,7 @@
 		 		
 		 		<h1 class="personal-room__header">Личный кабинет</h1>
 		 		
-		 		<div class="personal-room__box">
+		 		<div class="personal-room__box personal-room__box--PP">
 		 			<nav class="personal-room__nav">
 		 				<ul class="personal-room__nav-list">
 		 					<li class="personal-room__nav-item active">
@@ -325,6 +325,338 @@
 		 			<button class="btn btn--white btn--sm">+ Загрузить схему</button>
 		 		
 		 			<img class="scheme__img" src="../assets/images/schem.jpg" alt="">
+		 		
+		 			<h3 class="mb-30">Вложения</h3>
+		 		
+		 			<div class="d-flex nested__btn-box">
+		 				<button class="btn btn--white btn--sm">+ Добавить Вложение</button>
+		 				<button class="btn btn--white btn--sm">+ Добавить фотографию</button>
+		 			</div>
+		 		
+		 			<div class="d-flex nested__photo-list">
+		 				<div class="nested__photo-wrap"><img src="../assets/images/nested-photo.jpg" alt=""></div>
+		 				<div class="nested__photo-wrap"><img src="../assets/images/nested-photo.jpg" alt=""></div>
+		 				<div class="nested__photo-wrap"><img src="../assets/images/nested-photo.jpg" alt=""></div>
+		 			</div>
+		 		
+		 			<h3 class="tarif mb-20">Тарифы</h3>
+		 		
+		 			<div class="grid">
+		 				<div class="col-12">
+		 					<button class="btn btn--white btn--xsm">+ Тариф</button>
+		 				</div>
+		 		
+		 				<div class="col-5">
+		 					<input type="text" placeholder="Название" class="form__field tarif__name">
+		 				</div>
+		 				
+		 				<div class="col-12">
+		 					<button class="btn btn--white btn--sm">Загрузить иконку <img src="../assets/images/icons/download.svg" alt=""></button>
+		 		
+		 					<div class="personal-room__group tarif__setting">
+		 						<div class="d-flex mb-20">
+		 							<h4>Основной час: </h4>
+		 						</div>
+		 						<div class="d-flex">
+		 							<input type="text" class="form__field mb-20" name="name" />
+		 						</div>
+		 					</div>
+		 		
+		 					<div class="personal-room__group tarif__setting">
+		 						<div class="d-flex mb-20">
+		 							<h4>Последующие часы: </h4>
+		 						</div>
+		 						<div class="d-flex">
+		 							<input type="text" class="form__field mb-20" name="name" />
+		 						</div>
+		 					</div>
+		 		
+		 					<div class="personal-room__group tarif__setting">
+		 						<div class="d-flex mb-20">
+		 							<h4>Максимальная стоимость: </h4>
+		 						</div>
+		 						<div class="d-flex">
+		 							<input type="text" class="form__field mb-20" name="name" />
+		 						</div>
+		 					</div>
+		 				</div>
+		 		
+		 				<div class="col-5">
+		 					<input type="text" placeholder="Описание" class="form__field tarif__description">
+		 				</div>
+		 			</div>
+		 		
+		 			<h3 class="tarif mb-20">Параметры</h3>
+		 		
+		 			<div class="personal-room__group personal-room__group--params">
+		 				<div class="d-flex mb-15">
+		 					<img src="../assets/images/icons/area.svg" alt="">
+		 		
+		 					<input type="text" class="form__field mb-15" name="name" />
+		 					<h4>м²</h4>
+		 				</div>
+		 			</div>
+		 		
+		 			<div class="personal-room__group personal-room__group--params">
+		 				<div class="d-flex mb-15">
+		 					<img src="../assets/images/icons/count-guest.svg" alt="">
+		 		
+		 					<h4 class="no-ml">до</h4>
+		 					<input type="text" class="form__field mb-15" name="name" />
+		 				</div>
+		 			</div>	
+		 		
+		 			<div class="personal-room__group personal-room__group--params">
+		 				<div class="d-flex mb-15">
+		 					<img src="../assets/images/icons/near-stop.svg" alt="">
+		 					<h4>Ближайшая остановка</h4>
+		 		
+		 					<input type="text" class="form__field mb-15" name="name" />
+		 				</div>
+		 			</div>
+		 		
+		 			<div class="personal-room__group personal-room__group--params">
+		 				<div class="d-flex mb-15">
+		 					<img src="../assets/images/icons/clock.svg" alt="">
+		 					<h4>Время ходьбы до отсановки</h4>
+		 		
+		 					<input type="text" class="form__field mb-15" name="name" />
+		 					<h4>минут</h4>
+		 				</div>
+		 			</div>
+		 		
+		 			<div class="d-flex params">
+		 				<p class="grey-text">Вход:</p>
+		 				<select class="form__field" name="" id="">
+		 					<option value="">Парадный вход</option>
+		 				</select>
+		 			</div>
+		 		
+		 			<div class="d-flex params params--park">
+		 				<p class="grey-text">Парковка:</p>
+		 		
+		 				<input type="text" class="form__field form__field--xsm" name="name" />
+		 		
+		 				<h4 class="grey-text">машиномест</h4>
+		 				<select class="form__field" name="" id="">
+		 					<option value="">Бесплатно</option>
+		 				</select>
+		 		
+		 				<input type="text" class="form__field form__field--sm" name="name" />
+		 		
+		 				<h4 class="grey-text">рублей</h4>
+		 			</div>
+		 		
+		 			<h3 class="mb-30">Удобства</h3>
+		 		
+		 			<div class="widget">
+		 				<select class="form__field mb-20" name="" id="">
+		 					<option value="">Выбрать</option>
+		 				</select>
+		 		
+		 				<div class="col-12">
+		 					<input class="form__field" type="button" value="+ Добавить свой параметр">
+		 				</div>
+		 			</div>
+		 		
+		 			<h3 class="mb-30">Бытовые условия</h3>
+		 		
+		 			<div class="widget">
+		 				<select class="form__field mb-20" name="" id="">
+		 					<option value="">Выбрать</option>
+		 				</select>
+		 		
+		 				<div class="col-12">
+		 					<input class="form__field" type="button" value="+ Добавить свой параметр">
+		 				</div>
+		 			</div>
+		 		
+		 			<h3 class="mb-30">Мебель</h3>
+		 		
+		 			<div class="widget">
+		 				<select class="form__field mb-20" name="" id="">
+		 					<option value="">Выбрать</option>
+		 				</select>
+		 		
+		 				<div class="col-12">
+		 					<input class="form__field" type="button" value="+ Добавить свой параметр">
+		 				</div>
+		 			</div>
+		 		
+		 			<h3 class="mb-30">Оборудование</h3>
+		 		
+		 			<div class="widget">
+		 				<select class="form__field mb-20" name="" id="">
+		 					<option value="">Выбрать</option>
+		 				</select>
+		 		
+		 				<div class="col-12">
+		 					<input class="form__field" type="button" value="+ Добавить свой параметр">
+		 				</div>
+		 			</div>
+		 		
+		 		
+		 			<h3 class="mb-30">Услуги</h3>
+		 		
+		 			<div class="widget">
+		 				<div class="form__group ">
+		 					<span class="grey-text">Название</span>
+		 		
+		 					<div class="d-flex">
+		 						<input class="form__field form__field--tingh" type="text">
+		 		
+		 						<img class="action-btn edit-btn" src="../assets/images/icons/edit.svg" alt="">
+		 						<img class="action-btn" src="../assets/images/icons/remove-sm.svg" alt="">
+		 					</div>
+		 				</div>
+		 		
+		 				<div class="form-group price d-flex">
+		 					<p class="grey-text">Цена:</p>
+		 					<input class="form__field" type="text">
+		 				</div>
+		 		
+		 				<button class="btn btn--sm btn--white">+ Добавить услугу</button>
+		 			</div>
+		 		
+		 			<h3 class="mb-30">Афиша</h3>
+		 		
+		 			<div class="widget last">
+		 				<div class="d-flex add-picture">
+		 					<p class="grey-text ">Добавить картинку:</p>
+		 					<img src="../assets/images/icons/download.svg" alt="">
+		 				</div>
+		 		
+		 				<div class="form__group ">
+		 					<span class="grey-text">Название</span>
+		 		
+		 					<div class="d-flex">
+		 						<input class="form__field form__field--tingh" type="text">
+		 					</div>
+		 				</div>
+		 		
+		 				<div class="d-flex">
+		 					<div class="form__group form__group--md">
+		 						<div class="grey-text">Дата</div>
+		 						<input class="form__field form__field--md" type="text">
+		 					</div>
+		 		
+		 					<div class="form__group form__group--md">
+		 						<div class="grey-text">Время</div>
+		 						<input class="form__field form__field--md" type="text">
+		 					</div>
+		 		
+		 					<div class="form__group form__group--md">
+		 						<div class="grey-text">Стоимость</div>
+		 						<input class="form__field form__field--md" type="text">
+		 					</div>
+		 				</div>
+		 		
+		 				<div class="form__group">
+		 					<span class="grey-text">Описане</span>
+		 		
+		 					<div class="d-flex">
+		 						<input class="form__field mb-10 form__field--tingh" type="text">
+		 					</div>
+		 				</div>
+		 		
+		 				<button class="btn btn--sm btn--white">+ Добавить мероприятие</button>
+		 			</div>
+		 		
+		 			<div class="btn-box">
+		 				<button class="btn">Сохранить</button>
+		 				<button class="btn btn--white">Изменить</button>
+		 			</div>
+		 		
+		 			<h3 class="price-setting__title">Настройка цены</h3>
+		 		
+		 			<div class="grid">
+		 				<div class="col-7 price-setting">
+		 						
+		 					<div class="d-flex price-setting__interval">
+		 						<p class="grey-text">Общий ценовой интервал: <span class="black">*</span></p>
+		 		
+		 						<input class="form__field form__field--md" type="text">
+		 						<span class="defis">-</span>
+		 						<input class="form__field form__field--md" type="text">
+		 		
+		 						<span>рублей</span>
+		 					</div>
+		 		
+		 					<div class="d-flex price-setting__volume">
+		 						<p class="grey-text">Общая вместетильность площадки:</p>
+		 						<input class="form__field form__field--xsm" type="text">
+		 		
+		 						<span>человек</span>
+		 					</div>
+		 		
+		 					<div class="d-flex f-column price-setting__realize">
+		 						<p class="grey-text">Выберете формы реализации Вашей площадки:</p>
+		 		
+		 						<label class="d-flex price-setting__realize-input">
+		 							<input type="checkbox">
+		 							<img src="../assets/images/icons/confirm.svg" alt="">
+		 							<p>Помещение целиком</p>
+		 						</label>
+		 						<label class="d-flex price-setting__realize-input">
+		 							<input type="checkbox">
+		 							<img src="../assets/images/icons/confirm.svg" alt="">
+		 							<p>Отдельный элемент</p> <span>**</span>
+		 						</label>
+		 					</div>
+		 		
+		 					<div class="form__group">
+		 						<span class="grey-text mb-10">Введите название отдельного элемента:</span>
+		 		
+		 						<div class="d-flex">
+		 							<input class="form__field form__field--tingh" type="text">
+		 						</div>
+		 					</div>
+		 		
+		 					<div class="d-flex">
+		 						<p class="grey-text">Количество отдельных элементов:</p>
+		 						<input class="form__field form__field--xsm" type="text">
+		 					</div>
+		 		
+		 					<div class="d-flex price-setting__extra-switcher">
+		 						<p class="grey-text">Возможность выбора клиентом отдельного элемента:</p>
+		 						<div class="">
+		 							<button class="btn-confirm"><img src="../assets/images/icons/confirm.svg" alt=""></button>
+		 							<button class="btn-cancel"><img src="../assets/images/icons/remove.svg" alt=""></button>
+		 						</div>	
+		 					</div>
+		 		
+		 					<div class="d-flex price-setting__extra-check">
+		 						<p class="grey-text">Укажите средний чек отдельного элемента:</p>
+		 						<input class="form__field form__field--sm" type="text">
+		 		
+		 						<span>рублей</span>
+		 					</div>
+		 						
+		 		
+		 					<div class="d-flex price-setting__price mb-30">
+		 						<p class="grey-text">Стоимость</p>
+		 						<input class="form__field form__field--sm" type="text">
+		 						<select class="form__field form__field--sm" name="" id="">
+		 							<option value="">Час</option>
+		 						</select>
+		 		
+		 						<div class="grey-text">Столик: <span>#1234</span></div>
+		 					</div>
+		 				</div>
+		 		
+		 				<div class="col-4">
+		 					<div class="tip">
+		 						<p class="tip__title">Общий цеоновой интервал</p>
+		 		
+		 						<p class="tip__text">Формируется автоматически из значений введёных в таблицу и публикуется в информации объявления</p>
+		 					</div>
+		 				</div>
+		 			</div>
+		 		
+		 			<table>
+		 				
+		 			</table>	
+		 			
 		 		</div>
 			</div>
 		</main>
