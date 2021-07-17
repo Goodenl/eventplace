@@ -20,7 +20,7 @@
   <div class="page" id="page">
   	<!-- Header -->
   	<header class="header">
-  		<div class="container">
+  		<div class="container container--header">
   			<div class="header__wrapper">
   				<a href="/">
   					<img class="logo" src="../assets/images/logo.svg" alt="Логотип">
@@ -40,10 +40,10 @@
 		<main class="content">
 			<div class="container">
 		 		
-		 		<h1 class="personal-room__header">Личный кабинет</h1>
+		 		<h1 class="personal-room__header xs-hide">Личный кабинет</h1>
 		 		
 		 		<div class="personal-room__box personal-room__box--PP">
-		 			<nav class="personal-room__nav">
+		 			<nav class="personal-room__nav xs-hide">
 		 				<ul class="personal-room__nav-list">
 		 					<li class="personal-room__nav-item active">
 		 						<img src="../assets/images/nav/profile.svg" alt="">
@@ -68,7 +68,7 @@
 		 				</ul>
 		 			</nav>
 		 		
-		 			<h2 class="personal-room__title">Режим редактирования объявления #1234</h2>
+		 			<h2 class="personal-room__title xs-hide">Режим редактирования объявления #1234</h2>
 		 		
 		 			<div class="grid gap-s no-xp personal-room__content">
 		 				<div class="col-4">
@@ -502,7 +502,7 @@
 		 				<div class="form__group ">
 		 					<span class="grey-text">Название</span>
 		 		
-		 					<div class="d-flex">
+		 					<div class="d-flex xs-nowrap">
 		 						<input class="form__field form__field--tingh" type="text">
 		 		
 		 						<img class="action-btn edit-btn" src="../assets/images/icons/edit.svg" alt="">
@@ -645,12 +645,12 @@
 		 				</div>
 		 		
 		 				<div class="col-4">
-		 					<div class="tip">
+		 					<div class="tip xs-hide">
 		 						<p class="tip__title">Общий цеоновой интервал</p>
 		 		
 		 						<p class="tip__text">Формируется автоматически из значений введёных в таблицу и публикуется в информации объявления</p>
 		 					</div>
-		 					<div class="tip">
+		 					<div class="tip xs-hide">
 		 						<p class="tip__title">Общий цеоновой интервал</p>
 		 		
 		 						<p class="tip__text">Формируется автоматически из значений введёных в таблицу и публикуется в информации объявления</p>
@@ -714,6 +714,60 @@
 			</div>
 		</main>
   </div>
+
+  <footer class="footer">
+  	
+  	<div class="container">
+  		<div class="footer__wrap">
+  			<div class="grid">
+  				<div class="col-4">
+  					<ul class="footer__list">
+  						<li class="footer__item"><a href="#" class="footer__link">Наши преимущества</a></li>
+  						<li class="footer__item"><a href="#" class="footer__link">Как работает сервис?</a></li>
+  						<li class="footer__item"><a href="#" class="footer__link">Подключится к Eventplace</a></li>
+  						<li class="footer__item"><a href="#" class="footer__link">Гарантии и безопастность</a></li>
+  					</ul>
+  				</div>
+  				<div class="col-4">
+  					<ul class="footer__list footer__list--white">
+  						<li class="footer__item"><a href="#" class="footer__link">FAQ</a></li>
+  						<li class="footer__item"><a href="#" class="footer__link">Документы</a></li>
+  						<li class="footer__item"><a href="#" class="footer__link">Инвесторам</a></li>
+  						<li class="footer__item"><a href="#" class="footer__link">СМИ о нас</a></li>
+  					</ul>
+  				</div>
+  				<div class="col-4">
+  					<ul class="footer-soc__list">
+  						<li><a href="#"><img src="../assets/images/icons/facebook-svg.svg" alt=""></a></li>
+  						<li><a href="#"><img src="../assets/images/icons/telegram-svg.svg" alt=""></a></li>
+  						<li><a href="#"><img src="../assets/images/icons/instagram-svg.svg" alt=""></a></li>
+  						<li><a href="#"><img src="../assets/images/icons/vk-svg.svg" alt=""></a></li>
+  					</ul>
+  
+  					<p class="ooo">OOO “Eventpacle”</p>
+  					<p class="ooo">OOO “Eventpacle”</p>
+  				</div>
+  			</div>
+  
+  			<div class="footer__bottom">
+  				<a href="#" class="footer__text laws">
+  					© 2021 All rights reserved
+  				</a>
+  
+  				<div class="footer__text-group">
+  					<a href="#" class="footer__text">
+  						Конфиденциальность
+  					</a>
+  					<a href="#" class="footer__text">
+  						Условия
+  					</a>
+  				</div>
+  			</div>
+  		</div>
+  	</div>
+  
+  </footer>
+  
 
   <!-- JS -->
   <script src="assets/js/app.js"></script>

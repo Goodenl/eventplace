@@ -460,6 +460,12 @@ label {
     max-width: 50%;
 }
 
+@media (375px) {
+    .xs-hide {
+        display: none;
+    }
+}
+
 /* Blocks */
 .header {
     width: 100%;
@@ -469,6 +475,19 @@ label {
     top: 0;
     right: 0;
     z-index: 1000;
+}
+
+.header__nav {
+    margin: 0 auto;
+}
+
+.header__nav a {
+    text-decoration: none;
+    color: #363636;
+}
+
+.header__nav a:last-child {
+    margin-left: 5rem;
 }
 
 .header__wrapper {
@@ -606,7 +625,7 @@ label {
 }
 
 .container {
-    max-width: 1173px;
+    max-width: 1273px;
     margin: 0 auto;
     padding: 0 5rem;
 }
@@ -679,20 +698,8 @@ label {
     overflow: hidden;
 }
 
-@media screen and (max-width: 768px) {
-    .show-sidebar .page {
-        position: relative;
-    }
-}
-
-.page__title {
-    margin-bottom: 3rem;
-    font-size: 2.1rem;
-    color: #ffffff;
-}
-
-.page__title--center {
-    text-align: center;
+.page--enet {
+    background-color: #ffffff;
 }
 
 @media screen and (max-width: 768px) {
@@ -1584,26 +1591,66 @@ span.checkmark {
     content: url("../../assets/images/icons/confirm.svg");
 }
 
-table.table {
-    width: 100%;
-    border-collapse: collapse;
-    border-spacing: 0;
-    height: auto;
+.table {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
 }
 
-table.table, table.table td, table.table th {
-    border: 1px solid #595959;
+.table .table__header {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: 1fr 0.5fr 0.5fr 1.2fr 1.5fr 0.8fr 1.5fr;
+    grid-gap: 15px;
 }
 
-table.table td, table.table th {
-    min-height: 35px;
-    padding: 3px;
-    width: 30px;
-    height: 35px;
+.table .table__header li {
+    padding-bottom: 2.5rem;
+    font-size: 1.6rem;
+    color: #144747;
+    font-weight: 500;
+    text-align: center;
 }
 
-table.table th {
-    background: transparent;
-    color: #fff;
-    font-weight: normal;
+.table .table__item {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 0.5fr 1.2fr 1.5fr 0.8fr 1.5fr;
+    grid-gap: 15px;
+    position: relative;
+    border: 1px solid #DDDDDD;
+    border-radius: 8px;
+    border-bottom: none;
+}
+
+.table .table__item:last-child {
+    border-bottom: 1px solid #DDDDDD;
+}
+
+.table .table__item li {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #5E7979;
+}
+
+.table .table__item li:nth-last-child(2) {
+    position: absolute;
+    right: 6rem;
+    top: 0;
+    cursor: pointer;
+}
+
+.table .table__item li:nth-last-child(1) {
+    position: absolute;
+    right: 1.8rem;
+    top: -1.7rem;
+    cursor: pointer;
+}
+
+.table ~ .btn {
+    margin-top: 2rem;
+    margin-bottom: 22.3rem;
 }
