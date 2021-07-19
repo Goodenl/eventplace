@@ -325,6 +325,12 @@ textarea {
   color: #000;
   padding: 0.2em 0; }
 
+@font-face {
+  font-family: 'PF Bague Sans Pro';
+  src: local("PF Bague Sans Pro Regular"), local("PF-Bague-Sans-Pro-Regular"), url("../fonts/PFBagueSansPro.woff2") format("woff2"), url("../fonts/PFBagueSansPro.woff") format("woff"), url("../fonts/PFBagueSansPro.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+
 html {
   font-size: 62.5%; }
 
@@ -1636,6 +1642,9 @@ span.checkmark {
 @media screen and (max-width: 375px) {
   .xs-nowrap {
     flex-wrap: nowrap; } }
+
+.personal-room__text .field * {
+  font-family: "PF Bague Sans Pro", sans-serif; }
 
 .search-btn {
   width: 12.5rem;
