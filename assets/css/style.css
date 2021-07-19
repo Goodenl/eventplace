@@ -1643,7 +1643,6 @@ span.checkmark {
 }
 
 .personal-room__slider {
-    width: 31.2rem;
     position: relative;
     display: -ms-flexbox;
     display: flex;
