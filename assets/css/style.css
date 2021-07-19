@@ -1250,21 +1250,21 @@ label {
     padding: 0 5px;
     font-size: 1.2rem;
     cursor: text;
-    top: 5px;
+    top: -8px;
 }
 
 .form__field:-ms-input-placeholder ~ .form__label {
     padding: 0 5px;
     font-size: 1.2rem;
     cursor: text;
-    top: 5px;
+    top: -8px;
 }
 
 .form__field:placeholder-shown ~ .form__label {
     padding: 0 5px;
     font-size: 1.2rem;
     cursor: text;
-    top: 5px;
+    top: -8px;
 }
 
 .form__field--mode-work {
