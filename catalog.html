@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/css-light-grid@1.1.3/css-light-grid.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    
+    <!-- Useful meta tags -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="index, follow">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    
+    <title>catalog</title>
+</head>
+<body>
+
+  <div class="page page--enet" id="page">
+  	<!-- Header -->
+  	<header class="header header--enet header--ct">
+  		<div class="container">
+  			<div class="header__wrapper">
+  				<a href="/">
+  					<img class="logo" src="../assets/images/logo.svg" alt="Логотип">
+  				</a>
+  	
+  				<nav class="nav nav--header">
+  					<ul class="nav__list">
+  						<li class="nav__item">
+  							<p>Тип мероприятия</p>
+  						</li>
+  						<li class="nav__item">
+  							<p>Дата</p>
+  						</li>
+  						<li class="nav__item">
+  							<p>Количество гостей</p>
+  						</li>
+  	
+  						<button class="search-btn"><img src="../assets/images/icons/search.svg" alt=""></button>
+  					</ul>
+  				</nav>
+  	
+  				<div class="language__box">
+  					<img src="../assets/images/language.svg" alt="Язык" class="language__img">
+  				</div>
+  				<button class="btn-menu persona__box">
+  					<img class="burger" src="../assets/images/burger.svg" alt="Меню">
+  					<img src="../assets/images/persona.jpg" alt="Вы">
+  				</button>
+  			</div>
+  		</div>
+  	</header>
+		<!-- Main -->
+		<main class="content">
+	 		
+	 		<section class="filter-section">
+	 			<div class="container">
+	 				<div class="filter">
+	 					<ul class="filter__list">
+	 						<li class="filter__item active">
+	 							<p>Тип площадки</p>
+	 							<svg width="9" height="5" viewBox="0 0 9 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+	 								<path d="M8 0.75L4.5 4.25L1 0.75" stroke="#363636" stroke-linecap="round"/>
+	 							</svg>
+	 						</li>
+	 						<li class="filter__item">
+	 							<p>Стоимость</p>
+	 						</li>
+	 						<li class="filter__item">
+	 							<p>Фильтры</p>
+	 		
+	 							<svg width="9" height="5" viewBox="0 0 9 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+	 								<path d="M8 0.75L4.5 4.25L1 0.75" stroke="#363636" stroke-linecap="round"/>
+	 							</svg>
+	 						</li>
+	 						<li class="filter__item">
+	 							<p>Рейтинг</p>
+	 						</li>
+	 						<li class="filter__item">
+	 							<p>Количество отзывов</p>
+	 						</li>
+	 						<li class="filter__item">
+	 							<p>Дополнительно</p>
+	 						</li>
+	 					</ul>
+	 				</div>
+	 			</div>
+	 		</section>
+	 		
+	 		<section class="catalog-section">
+	 			<div class="container">
+	 				<h2>Все площадки Краснодара</h2>
+	 		
+	 				<div class="catalog__grid">
+	 					<div class="catalog__item">
+	 						<div class="catalog__img-wrap">
+	 							<img src="../assets/images/card.jpg" alt="">
+	 		
+	 							<div class="catalog__interface">
+	 								<button class="catalog__item-like">
+	 									<img src="../assets/images/icons/like.svg" alt="">
+	 								</button>
+	 		
+	 								<div class="catalog__btn-box">
+	 									<button class="catalog__item-btn catalog__item-prev">
+	 										<svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+	 											<path d="M1 1L8 8L1 15" stroke="white" stroke-width="2" stroke-linecap="round"/>
+	 										</svg>
+	 									</button>
+	 									<button class="catalog__item-btn catalog__item-next">
+	 										<svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+	 											<path d="M1 1L8 8L1 15" stroke="white" stroke-width="2" stroke-linecap="round"/>
+	 										</svg>
+	 									</button>
+	 								</div>
+	 		
+	 								<div class="catalog__item-price">
+	 									<span>За 1 час</span>
+	 									<p>₽ 1 200 - ₽ 3 500</p>
+	 								</div>
+	 							</div>
+	 						</div>
+	 		
+	 						<div class="catalog__text-wrap">
+	 							<div class="catalog__text-group">
+	 								<p class="catalog__name">Луна</p>
+	 								<p class="catalog__rating"><img src="../assets/images/star.svg" alt=""> 4,8 <span>(45)</span></p>
+	 							</div>
+	 							<div class="catalog__text-group">
+	 								<p class="catalog__number">#1234</p>
+	 								<p class="catalog__type">Беседка</p>
+	 							</div>
+	 							<div class="catalog__text-group">
+	 								<p class="catalog__geo">
+	 									<img src="../assets/images/icons/near-stop.svg" alt=""> ул. Минская, 64
+	 								</p>
+	 								<p class="catalog__area">
+	 									<img src="../assets/images/icons/area.svg" alt=""> 320 м²
+	 								</p>
+	 								<p class="catalog__presons-count">
+	 									<img src="../assets/images/icons/count-guest.svg" alt=""> до 12
+	 								</p>
+	 							</div>
+	 						</div>
+	 					</div>
+	 		
+	 					<div class="catalog__item">
+	 						<div class="catalog__img-wrap">
+	 							<img src="../assets/images/card.jpg" alt="">
+	 		
+	 							<div class="catalog__interface">
+	 								<button class="catalog__item-like">
+	 									<img src="../assets/images/icons/like.svg" alt="">
+	 								</button>
+	 		
+	 								<div class="catalog__btn-box">
+	 									<button class="catalog__item-btn catalog__item-prev">
+	 										<svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+	 											<path d="M1 1L8 8L1 15" stroke="white" stroke-width="2" stroke-linecap="round"/>
+	 										</svg>
+	 									</button>
+	 									<button class="catalog__item-btn catalog__item-next">
+	 										<svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+	 											<path d="M1 1L8 8L1 15" stroke="white" stroke-width="2" stroke-linecap="round"/>
+	 										</svg>
+	 									</button>
+	 								</div>
+	 		
+	 								<div class="catalog__item-price">
+	 									<span>За 1 час</span>
+	 									<p>₽ 1 200 - ₽ 3 500</p>
+	 								</div>
+	 							</div>
+	 						</div>
+	 		
+	 						<div class="catalog__text-wrap">
+	 							<div class="catalog__text-group">
+	 								<p class="catalog__name">Луна</p>
+	 								<p class="catalog__rating"><img src="../assets/images/star.svg" alt=""> 4,8 <span>(45)</span></p>
+	 							</div>
+	 							<div class="catalog__text-group">
+	 								<p class="catalog__number">#1234</p>
+	 								<p class="catalog__type">Беседка</p>
+	 							</div>
+	 							<div class="catalog__text-group">
+	 								<p class="catalog__geo">
+	 									<img src="../assets/images/icons/near-stop.svg" alt=""> ул. Минская, 64
+	 								</p>
+	 								<p class="catalog__area">
+	 									<img src="../assets/images/icons/area.svg" alt=""> 320 м²
+	 								</p>
+	 								<p class="catalog__presons-count">
+	 									<img src="../assets/images/icons/count-guest.svg" alt=""> до 12
+	 								</p>
+	 							</div>
+	 						</div>
+	 					</div>
+	 		
+	 					<div class="catalog__item">
+	 						<div class="catalog__img-wrap">
+	 							<img src="../assets/images/card.jpg" alt="">
+	 		
+	 							<div class="catalog__interface">
+	 								<button class="catalog__item-like">
+	 									<img src="../assets/images/icons/like.svg" alt="">
+	 								</button>
+	 		
+	 								<div class="catalog__btn-box">
+	 									<button class="catalog__item-btn catalog__item-prev">
+	 										<svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+	 											<path d="M1 1L8 8L1 15" stroke="white" stroke-width="2" stroke-linecap="round"/>
+	 										</svg>
+	 									</button>
+	 									<button class="catalog__item-btn catalog__item-next">
+	 										<svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+	 											<path d="M1 1L8 8L1 15" stroke="white" stroke-width="2" stroke-linecap="round"/>
+	 										</svg>
+	 									</button>
+	 								</div>
+	 		
+	 								<div class="catalog__item-price">
+	 									<span>За 1 час</span>
+	 									<p>₽ 1 200 - ₽ 3 500</p>
+	 								</div>
+	 							</div>
+	 						</div>
+	 		
+	 						<div class="catalog__text-wrap">
+	 							<div class="catalog__text-group">
+	 								<p class="catalog__name">Луна</p>
+	 								<p class="catalog__rating"><img src="../assets/images/star.svg" alt=""> 4,8 <span>(45)</span></p>
+	 							</div>
+	 							<div class="catalog__text-group">
+	 								<p class="catalog__number">#1234</p>
+	 								<p class="catalog__type">Беседка</p>
+	 							</div>
+	 							<div class="catalog__text-group">
+	 								<p class="catalog__geo">
+	 									<img src="../assets/images/icons/near-stop.svg" alt=""> ул. Минская, 64
+	 								</p>
+	 								<p class="catalog__area">
+	 									<img src="../assets/images/icons/area.svg" alt=""> 320 м²
+	 								</p>
+	 								<p class="catalog__presons-count">
+	 									<img src="../assets/images/icons/count-guest.svg" alt=""> до 12
+	 								</p>
+	 							</div>
+	 						</div>
+	 					</div>
+	 		
+	 					<div class="catalog__item">
+	 						<div class="catalog__img-wrap">
+	 							<img src="../assets/images/card.jpg" alt="">
+	 		
+	 							<div class="catalog__interface">
+	 								<button class="catalog__item-like">
+	 									<img src="../assets/images/icons/like.svg" alt="">
+	 								</button>
+	 		
+	 								<div class="catalog__btn-box">
+	 									<button class="catalog__item-btn catalog__item-prev">
+	 										<svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+	 											<path d="M1 1L8 8L1 15" stroke="white" stroke-width="2" stroke-linecap="round"/>
+	 										</svg>
+	 									</button>
+	 									<button class="catalog__item-btn catalog__item-next">
+	 										<svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+	 											<path d="M1 1L8 8L1 15" stroke="white" stroke-width="2" stroke-linecap="round"/>
+	 										</svg>
+	 									</button>
+	 								</div>
+	 		
+	 								<div class="catalog__item-price">
+	 									<span>За 1 час</span>
+	 									<p>₽ 1 200 - ₽ 3 500</p>
+	 								</div>
+	 							</div>
+	 						</div>
+	 		
+	 						<div class="catalog__text-wrap">
+	 							<div class="catalog__text-group">
+	 								<p class="catalog__name">Луна</p>
+	 								<p class="catalog__rating"><img src="../assets/images/star.svg" alt=""> 4,8 <span>(45)</span></p>
+	 							</div>
+	 							<div class="catalog__text-group">
+	 								<p class="catalog__number">#1234</p>
+	 								<p class="catalog__type">Беседка</p>
+	 							</div>
+	 							<div class="catalog__text-group">
+	 								<p class="catalog__geo">
+	 									<img src="../assets/images/icons/near-stop.svg" alt=""> ул. Минская, 64
+	 								</p>
+	 								<p class="catalog__area">
+	 									<img src="../assets/images/icons/area.svg" alt=""> 320 м²
+	 								</p>
+	 								<p class="catalog__presons-count">
+	 									<img src="../assets/images/icons/count-guest.svg" alt=""> до 12
+	 								</p>
+	 							</div>
+	 						</div>
+	 					</div>
+	 		
+	 					<div class="catalog__item">
+	 						<div class="catalog__img-wrap">
+	 							<img src="../assets/images/card.jpg" alt="">
+	 		
+	 							<div class="catalog__interface">
+	 								<button class="catalog__item-like">
+	 									<img src="../assets/images/icons/like.svg" alt="">
+	 								</button>
+	 		
+	 								<div class="catalog__btn-box">
+	 									<button class="catalog__item-btn catalog__item-prev">
+	 										<svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+	 											<path d="M1 1L8 8L1 15" stroke="white" stroke-width="2" stroke-linecap="round"/>
+	 										</svg>
+	 									</button>
+	 									<button class="catalog__item-btn catalog__item-next">
+	 										<svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+	 											<path d="M1 1L8 8L1 15" stroke="white" stroke-width="2" stroke-linecap="round"/>
+	 										</svg>
+	 									</button>
+	 								</div>
+	 		
+	 								<div class="catalog__item-price">
+	 									<span>За 1 час</span>
+	 									<p>₽ 1 200 - ₽ 3 500</p>
+	 								</div>
+	 							</div>
+	 						</div>
+	 		
+	 						<div class="catalog__text-wrap">
+	 							<div class="catalog__text-group">
+	 								<p class="catalog__name">Луна</p>
+	 								<p class="catalog__rating"><img src="../assets/images/star.svg" alt=""> 4,8 <span>(45)</span></p>
+	 							</div>
+	 							<div class="catalog__text-group">
+	 								<p class="catalog__number">#1234</p>
+	 								<p class="catalog__type">Беседка</p>
+	 							</div>
+	 							<div class="catalog__text-group">
+	 								<p class="catalog__geo">
+	 									<img src="../assets/images/icons/near-stop.svg" alt=""> ул. Минская, 64
+	 								</p>
+	 								<p class="catalog__area">
+	 									<img src="../assets/images/icons/area.svg" alt=""> 320 м²
+	 								</p>
+	 								<p class="catalog__presons-count">
+	 									<img src="../assets/images/icons/count-guest.svg" alt=""> до 12
+	 								</p>
+	 							</div>
+	 						</div>
+	 					</div>
+	 		
+	 					<div class="catalog__item">
+	 						<div class="catalog__img-wrap">
+	 							<img src="../assets/images/card.jpg" alt="">
+	 		
+	 							<div class="catalog__interface">
+	 								<button class="catalog__item-like">
+	 									<img src="../assets/images/icons/like.svg" alt="">
+	 								</button>
+	 		
+	 								<div class="catalog__btn-box">
+	 									<button class="catalog__item-btn catalog__item-prev">
+	 										<svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+	 											<path d="M1 1L8 8L1 15" stroke="white" stroke-width="2" stroke-linecap="round"/>
+	 										</svg>
+	 									</button>
+	 									<button class="catalog__item-btn catalog__item-next">
+	 										<svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+	 											<path d="M1 1L8 8L1 15" stroke="white" stroke-width="2" stroke-linecap="round"/>
+	 										</svg>
+	 									</button>
+	 								</div>
+	 		
+	 								<div class="catalog__item-price">
+	 									<span>За 1 час</span>
+	 									<p>₽ 1 200 - ₽ 3 500</p>
+	 								</div>
+	 							</div>
+	 						</div>
+	 		
+	 						<div class="catalog__text-wrap">
+	 							<div class="catalog__text-group">
+	 								<p class="catalog__name">Луна</p>
+	 								<p class="catalog__rating"><img src="../assets/images/star.svg" alt=""> 4,8 <span>(45)</span></p>
+	 							</div>
+	 							<div class="catalog__text-group">
+	 								<p class="catalog__number">#1234</p>
+	 								<p class="catalog__type">Беседка</p>
+	 							</div>
+	 							<div class="catalog__text-group">
+	 								<p class="catalog__geo">
+	 									<img src="../assets/images/icons/near-stop.svg" alt=""> ул. Минская, 64
+	 								</p>
+	 								<p class="catalog__area">
+	 									<img src="../assets/images/icons/area.svg" alt=""> 320 м²
+	 								</p>
+	 								<p class="catalog__presons-count">
+	 									<img src="../assets/images/icons/count-guest.svg" alt=""> до 12
+	 								</p>
+	 							</div>
+	 						</div>
+	 					</div>
+	 		
+	 					<div class="catalog__item">
+	 						<div class="catalog__img-wrap">
+	 							<img src="../assets/images/card.jpg" alt="">
+	 		
+	 							<div class="catalog__interface">
+	 								<button class="catalog__item-like">
+	 									<img src="../assets/images/icons/like.svg" alt="">
+	 								</button>
+	 		
+	 								<div class="catalog__btn-box">
+	 									<button class="catalog__item-btn catalog__item-prev">
+	 										<svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+	 											<path d="M1 1L8 8L1 15" stroke="white" stroke-width="2" stroke-linecap="round"/>
+	 										</svg>
+	 									</button>
+	 									<button class="catalog__item-btn catalog__item-next">
+	 										<svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+	 											<path d="M1 1L8 8L1 15" stroke="white" stroke-width="2" stroke-linecap="round"/>
+	 										</svg>
+	 									</button>
+	 								</div>
+	 		
+	 								<div class="catalog__item-price">
+	 									<span>За 1 час</span>
+	 									<p>₽ 1 200 - ₽ 3 500</p>
+	 								</div>
+	 							</div>
+	 						</div>
+	 		
+	 						<div class="catalog__text-wrap">
+	 							<div class="catalog__text-group">
+	 								<p class="catalog__name">Луна</p>
+	 								<p class="catalog__rating"><img src="../assets/images/star.svg" alt=""> 4,8 <span>(45)</span></p>
+	 							</div>
+	 							<div class="catalog__text-group">
+	 								<p class="catalog__number">#1234</p>
+	 								<p class="catalog__type">Беседка</p>
+	 							</div>
+	 							<div class="catalog__text-group">
+	 								<p class="catalog__geo">
+	 									<img src="../assets/images/icons/near-stop.svg" alt=""> ул. Минская, 64
+	 								</p>
+	 								<p class="catalog__area">
+	 									<img src="../assets/images/icons/area.svg" alt=""> 320 м²
+	 								</p>
+	 								<p class="catalog__presons-count">
+	 									<img src="../assets/images/icons/count-guest.svg" alt=""> до 12
+	 								</p>
+	 							</div>
+	 						</div>
+	 					</div>
+	 		
+	 					<div class="catalog__item">
+	 						<div class="catalog__img-wrap">
+	 							<img src="../assets/images/card.jpg" alt="">
+	 		
+	 							<div class="catalog__interface">
+	 								<button class="catalog__item-like">
+	 									<img src="../assets/images/icons/like.svg" alt="">
+	 								</button>
+	 		
+	 								<div class="catalog__btn-box">
+	 									<button class="catalog__item-btn catalog__item-prev">
+	 										<svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+	 											<path d="M1 1L8 8L1 15" stroke="white" stroke-width="2" stroke-linecap="round"/>
+	 										</svg>
+	 									</button>
+	 									<button class="catalog__item-btn catalog__item-next">
+	 										<svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+	 											<path d="M1 1L8 8L1 15" stroke="white" stroke-width="2" stroke-linecap="round"/>
+	 										</svg>
+	 									</button>
+	 								</div>
+	 		
+	 								<div class="catalog__item-price">
+	 									<span>За 1 час</span>
+	 									<p>₽ 1 200 - ₽ 3 500</p>
+	 								</div>
+	 							</div>
+	 						</div>
+	 		
+	 						<div class="catalog__text-wrap">
+	 							<div class="catalog__text-group">
+	 								<p class="catalog__name">Луна</p>
+	 								<p class="catalog__rating"><img src="../assets/images/star.svg" alt=""> 4,8 <span>(45)</span></p>
+	 							</div>
+	 							<div class="catalog__text-group">
+	 								<p class="catalog__number">#1234</p>
+	 								<p class="catalog__type">Беседка</p>
+	 							</div>
+	 							<div class="catalog__text-group">
+	 								<p class="catalog__geo">
+	 									<img src="../assets/images/icons/near-stop.svg" alt=""> ул. Минская, 64
+	 								</p>
+	 								<p class="catalog__area">
+	 									<img src="../assets/images/icons/area.svg" alt=""> 320 м²
+	 								</p>
+	 								<p class="catalog__presons-count">
+	 									<img src="../assets/images/icons/count-guest.svg" alt=""> до 12
+	 								</p>
+	 							</div>
+	 						</div>
+	 					</div>
+	 		
+	 					<div class="catalog__item">
+	 						<div class="catalog__img-wrap">
+	 							<img src="../assets/images/card.jpg" alt="">
+	 		
+	 							<div class="catalog__interface">
+	 								<button class="catalog__item-like">
+	 									<img src="../assets/images/icons/like.svg" alt="">
+	 								</button>
+	 		
+	 								<div class="catalog__btn-box">
+	 									<button class="catalog__item-btn catalog__item-prev">
+	 										<svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+	 											<path d="M1 1L8 8L1 15" stroke="white" stroke-width="2" stroke-linecap="round"/>
+	 										</svg>
+	 									</button>
+	 									<button class="catalog__item-btn catalog__item-next">
+	 										<svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+	 											<path d="M1 1L8 8L1 15" stroke="white" stroke-width="2" stroke-linecap="round"/>
+	 										</svg>
+	 									</button>
+	 								</div>
+	 		
+	 								<div class="catalog__item-price">
+	 									<span>За 1 час</span>
+	 									<p>₽ 1 200 - ₽ 3 500</p>
+	 								</div>
+	 							</div>
+	 						</div>
+	 		
+	 						<div class="catalog__text-wrap">
+	 							<div class="catalog__text-group">
+	 								<p class="catalog__name">Луна</p>
+	 								<p class="catalog__rating"><img src="../assets/images/star.svg" alt=""> 4,8 <span>(45)</span></p>
+	 							</div>
+	 							<div class="catalog__text-group">
+	 								<p class="catalog__number">#1234</p>
+	 								<p class="catalog__type">Беседка</p>
+	 							</div>
+	 							<div class="catalog__text-group">
+	 								<p class="catalog__geo">
+	 									<img src="../assets/images/icons/near-stop.svg" alt=""> ул. Минская, 64
+	 								</p>
+	 								<p class="catalog__area">
+	 									<img src="../assets/images/icons/area.svg" alt=""> 320 м²
+	 								</p>
+	 								<p class="catalog__presons-count">
+	 									<img src="../assets/images/icons/count-guest.svg" alt=""> до 12
+	 								</p>
+	 							</div>
+	 						</div>
+	 					</div>
+	 				</div>
+	 		
+	 				<div class="catalog__pagination">
+	 					<div class="catalog__pagination-wrap">
+	 						<button class="catalog__pagintaion-btn catalog__pagination-prev">
+	 							<svg width="18" height="9" viewBox="0 0 18 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+	 								<path d="M1 4.5H17M17 4.5L13 1M17 4.5L13 8" stroke="#008C8C" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+	 							</svg>
+	 						</button>
+	 		
+	 						<div class="catalog__page-wrap">
+	 							<a href="#" class="catalog__page active">1</a>
+	 							<a href="#" class="catalog__page">2</a>
+	 							<a href="#" class="catalog__page">3</a>
+	 							<a href="#" class="catalog__page">4</a>
+	 							<a href="#" class="catalog__page">...</a>
+	 							<a href="#" class="catalog__page">54</a>
+	 						</div>
+	 		
+	 						<button class="catalog__pagintaion-btn catalog__pagination-next">
+	 							<svg width="18" height="9" viewBox="0 0 18 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+	 								<path d="M1 4.5H17M17 4.5L13 1M17 4.5L13 8" stroke="#008C8C" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+	 							</svg>
+	 						</button>
+	 					</div>
+	 				</div>
+	 			</div>
+	 		</section>
+		</main>
+  </div>
+
+  <footer class="footer">
+  	
+  	<div class="container">
+  		<div class="footer__wrap">
+  			<div class="grid">
+  				<div class="col-4">
+  					<ul class="footer__list">
+  						<li class="footer__item"><a href="#" class="footer__link">Наши преимущества</a></li>
+  						<li class="footer__item"><a href="#" class="footer__link">Как работает сервис?</a></li>
+  						<li class="footer__item"><a href="#" class="footer__link">Подключится к Eventplace</a></li>
+  						<li class="footer__item"><a href="#" class="footer__link">Гарантии и безопастность</a></li>
+  					</ul>
+  				</div>
+  				<div class="col-4">
+  					<ul class="footer__list footer__list--white">
+  						<li class="footer__item"><a href="#" class="footer__link">FAQ</a></li>
+  						<li class="footer__item"><a href="#" class="footer__link">Документы</a></li>
+  						<li class="footer__item"><a href="#" class="footer__link">Инвесторам</a></li>
+  						<li class="footer__item"><a href="#" class="footer__link">СМИ о нас</a></li>
+  					</ul>
+  				</div>
+  				<div class="col-4">
+  					<ul class="footer-soc__list">
+  						<li><a href="#"><img src="../assets/images/icons/facebook-svg.svg" alt=""></a></li>
+  						<li><a href="#"><img src="../assets/images/icons/telegram-svg.svg" alt=""></a></li>
+  						<li><a href="#"><img src="../assets/images/icons/instagram-svg.svg" alt=""></a></li>
+  						<li><a href="#"><img src="../assets/images/icons/vk-svg.svg" alt=""></a></li>
+  					</ul>
+  
+  					<p class="ooo">OOO “Eventpacle”</p>
+  					<p class="ooo">OOO “Eventpacle”</p>
+  				</div>
+  			</div>
+  
+  			<div class="footer__bottom">
+  				<a href="#" class="footer__text laws">
+  					© 2021 All rights reserved
+  				</a>
+  
+  				<div class="footer__text-group">
+  					<a href="#" class="footer__text">
+  						Конфиденциальность
+  					</a>
+  					<a href="#" class="footer__text">
+  						Условия
+  					</a>
+  				</div>
+  			</div>
+  		</div>
+  	</div>
+  
+  </footer>
+
+  <!-- JS -->
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
