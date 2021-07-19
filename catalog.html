@@ -60,7 +60,7 @@
 	 			<div class="container">
 	 				<div class="filter">
 	 					<ul class="filter__list">
-	 						<li class="filter__item active">
+	 						<li class="filter__item" data-modal="area">
 	 							<p>Тип площадки</p>
 	 							<svg width="9" height="5" viewBox="0 0 9 5" fill="none" xmlns="http://www.w3.org/2000/svg">
 	 								<path d="M8 0.75L4.5 4.25L1 0.75" stroke="#363636" stroke-linecap="round"/>
@@ -69,7 +69,7 @@
 	 						<li class="filter__item">
 	 							<p>Стоимость</p>
 	 						</li>
-	 						<li class="filter__item">
+	 						<li class="filter__item" data-modal="filter">
 	 							<p>Фильтры</p>
 	 		
 	 							<svg width="9" height="5" viewBox="0 0 9 5" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -86,6 +86,569 @@
 	 							<p>Дополнительно</p>
 	 						</li>
 	 					</ul>
+	 				</div>
+	 			</div>
+	 		</section>
+	 		
+	 		<section class="modal-sec" id="area">
+	 			<div class="modal">
+	 				<div class="modal__content">
+	 					<ul class="areas__list">
+	 						<li class="areas__item">
+	 							<label>
+	 								<input class="square" type="checkbox">
+	 								<p>Лофт</p>
+	 		
+	 								<span class="areas__count">
+	 									(13)
+	 								</span>
+	 							</label>
+	 						</li>
+	 						<li class="areas__item">
+	 							<label>
+	 								<input class="square" type="checkbox">
+	 								<p>Бар</p>
+	 		
+	 								<span class="areas__count">
+	 									(13)
+	 								</span>
+	 							</label>
+	 						</li>
+	 						<li class="areas__item">
+	 							<label>
+	 								<input class="square" type="checkbox">
+	 								<p>Беседки</p>
+	 		
+	 								<span class="areas__count">
+	 									(13)
+	 								</span>
+	 							</label>
+	 						</li>
+	 						<li class="areas__item">
+	 							<label>
+	 								<input class="square" type="checkbox">
+	 								<p>Бани и сауны</p>
+	 		
+	 								<span class="areas__count">
+	 									(13)
+	 								</span>
+	 							</label>
+	 						</li>
+	 						<li class="areas__item">
+	 							<label>
+	 								<input class="square" type="checkbox">
+	 								<p>Коттеджи</p>
+	 		
+	 								<span class="areas__count">
+	 									(13)
+	 								</span>
+	 							</label>
+	 						</li>
+	 						<li class="areas__item">
+	 							<label>
+	 								<input class="square" type="checkbox">
+	 								<p>Боулинг</p>
+	 		
+	 								<span class="areas__count">
+	 									(13)
+	 								</span>
+	 							</label>
+	 						</li>
+	 						<li class="areas__item">
+	 							<label>
+	 								<input class="square" type="checkbox">
+	 								<p>Квесты</p>
+	 		
+	 								<span class="areas__count">
+	 									(13)
+	 								</span>
+	 							</label>
+	 						</li>
+	 						<li class="areas__item">
+	 							<label>
+	 								<input class="square" type="checkbox">
+	 								<p>Лофт</p>
+	 		
+	 								<span class="areas__count">
+	 									(13)
+	 								</span>
+	 							</label>
+	 						</li>
+	 						<li class="areas__item">
+	 							<label>
+	 								<input class="square" type="checkbox">
+	 								<p>Лофт</p>
+	 		
+	 								<span class="areas__count">
+	 									(13)
+	 								</span>
+	 							</label>
+	 						</li>
+	 					</ul>
+	 				</div>
+	 		
+	 				<div class="modal__bottom">
+	 					<p>Очистить</p>
+	 					<button class="btn btn--sm">Сохранить</button>
+	 				</div>
+	 			</div>
+	 		</section>
+	 		
+	 		<section class="modal-sec" id="filter">
+	 			<div class="modal">
+	 				<div class="modal__content">
+	 					<div class="sel">
+	 						<div class="grid">
+	 							<div class="col-6">
+	 								<div class="area-sel">
+	 									<p class="sel__header">
+	 										Площадь <span>(м²)</span>
+	 									</p>
+	 		
+	 									<div class="sel__input-box">
+	 										<div class="sel__input">
+	 											<p>От</p>
+	 											<input class="form__field" type="text">
+	 										</div>
+	 		
+	 										<div class="sel__input">
+	 											<p>До</p>
+	 											<input class="form__field" type="text">
+	 										</div>
+	 									</div>
+	 								</div>
+	 		
+	 								<div class="location-sel">
+	 									<p class="sel__header">
+	 										Локация
+	 									</p>
+	 		
+	 									<div class="sel__input-box">
+	 										<select class="form__field">
+	 											<option value="">Выберете округ</option>
+	 										</select>
+	 									</div>
+	 								</div>
+	 							</div>
+	 		
+	 							<div class="col-6">
+	 								<ul class="area__list">
+	 									<li class="areas__item">
+	 										<label>
+	 											<input class="square" type="checkbox">
+	 											<p>Доступная среда</p>
+	 										</label>
+	 									</li>
+	 		
+	 									<li class="areas__item">
+	 										<label>
+	 											<input class="square" type="checkbox">
+	 											<p>Есть схема места</p>
+	 										</label>
+	 									</li>
+	 		
+	 									<li class="areas__item">
+	 										<label>
+	 											<input class="square" type="checkbox">
+	 											<p>Лофт</p>
+	 										</label>
+	 									</li>
+	 								</ul>
+	 							</div>
+	 						</div>	
+	 		
+	 						<div class="rules-sel">
+	 							<p class="sel__header">
+	 								Правила
+	 							</p>
+	 		
+	 							<div class="sel-grid">
+	 								<li class="areas__item sel-grid__item">
+	 									<label>
+	 										<input class="square" type="checkbox">
+	 										<p>Разрешено с животными</p>
+	 									</label>
+	 								</li>
+	 								<li class="areas__item sel-grid__item">
+	 									<label>
+	 										<input class="square" type="checkbox">
+	 										<p>Можно с детьми</p>
+	 									</label>
+	 								</li>
+	 								<li class="areas__item sel-grid__item">
+	 									<label>
+	 										<input class="square" type="checkbox">
+	 										<p>Можно курить на территории</p>
+	 									</label>
+	 								</li>
+	 								<li class="areas__item sel-grid__item">
+	 									<label>
+	 										<input class="square" type="checkbox">
+	 										<p>Без залога</p>
+	 									</label>
+	 								</li>
+	 								<li class="areas__item sel-grid__item">
+	 									<label>
+	 										<input class="square" type="checkbox">
+	 										<p>Можно свой кейтеринг</p>
+	 									</label>
+	 								</li>
+	 								<li class="areas__item sel-grid__item">
+	 									<label>
+	 										<input class="square" type="checkbox">
+	 										<p>Еда и напитки с собой</p>
+	 									</label>
+	 								</li>
+	 								<li class="areas__item sel-grid__item">
+	 									<label>
+	 										<input class="square" type="checkbox">
+	 										<p>Можно свой алкоголь</p>
+	 									</label>
+	 								</li>
+	 								<li class="areas__item sel-grid__item">
+	 									<label>
+	 										<input class="square" type="checkbox">
+	 										<p>Без депозита</p>
+	 									</label>
+	 								</li>
+	 								<li class="areas__item sel-grid__item">
+	 									<label>
+	 										<input class="square" type="checkbox">
+	 										<p>Можно шуметь после 23:00</p>
+	 									</label>
+	 								</li>
+	 							</div>
+	 						</div>
+	 		
+	 						<div class="comf-sel">
+	 							<p class="sel__header">
+	 								Удобства
+	 		
+	 								<svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+	 									<path d="M1 1L8 8L15 1" stroke="#363636" stroke-width="1.5" stroke-linecap="round"/>
+	 								</svg>
+	 							</p>
+	 		
+	 							<div class="sel-grid">
+	 								<li class="areas__item sel-grid__item">
+	 									<label>
+	 										<input class="square" type="checkbox">
+	 										<p>Быстрый интернет</p>
+	 									</label>
+	 								</li>
+	 								<li class="areas__item sel-grid__item">
+	 									<label>
+	 										<input class="square" type="checkbox">
+	 										<p>Парковка</p>
+	 									</label>
+	 								</li>
+	 		
+	 								<li class="areas__item sel-grid__item">
+	 									<label>
+	 										<input class="square" type="checkbox">
+	 										<p>Кондиционер</p>
+	 									</label>
+	 								</li>
+	 								<li class="areas__item sel-grid__item">
+	 									<label>
+	 										<input class="square" type="checkbox">
+	 										<p>Отопление</p>
+	 									</label>
+	 								</li>
+	 		
+	 								<li class="areas__item sel-grid__item">
+	 									<label>
+	 										<input class="square" type="checkbox">
+	 										<p>Самостоятельное прибытие</p>
+	 									</label>
+	 								</li>
+	 								<li class="areas__item sel-grid__item">
+	 									<label>
+	 										<input class="square" type="checkbox">
+	 										<p>Выход к воде</p>
+	 									</label>
+	 								</li>
+	 		
+	 								<li class="areas__item sel-grid__item">
+	 									<label>
+	 										<input class="square" type="checkbox">
+	 										<p>Барбекю-гриль</p>
+	 									</label>
+	 								</li>
+	 								<li class="areas__item sel-grid__item">
+	 									<label>
+	 										<input class="square" type="checkbox">
+	 										<p>Wi-Fi</p>
+	 									</label>
+	 								</li>
+	 		
+	 								<li class="areas__item sel-grid__item">
+	 									<label>
+	 										<input class="square" type="checkbox">
+	 										<p>Детская зона</p>
+	 									</label>
+	 								</li>
+	 								<li class="areas__item sel-grid__item">
+	 									<label>
+	 										<input class="square" type="checkbox">
+	 										<p>Барная стойка</p>
+	 									</label>
+	 								</li>
+	 		
+	 								<li class="areas__item sel-grid__item">
+	 									<label>
+	 										<input class="square" type="checkbox">
+	 										<p>Защита от комаров</p>
+	 									</label>
+	 								</li>
+	 								<li class="areas__item sel-grid__item">
+	 									<label>
+	 										<input class="square" type="checkbox">
+	 										<p>Бассейн</p>
+	 									</label>
+	 								</li>
+	 		
+	 								<li class="areas__item sel-grid__item">
+	 									<label>
+	 										<input class="square" type="checkbox">
+	 										<p>Зона lounge</p>
+	 									</label>
+	 								</li>
+	 								<li class="areas__item sel-grid__item">
+	 									<label>
+	 										<input class="square" type="checkbox">
+	 										<p>Веранда</p>
+	 									</label>
+	 								</li>
+	 		
+	 								<li class="areas__item sel-grid__item">
+	 									<label>
+	 										<input class="square" type="checkbox">
+	 										<p>Зона VIP</p>
+	 									</label>
+	 								</li>
+	 								<li class="areas__item sel-grid__item">
+	 									<label>
+	 										<input class="square" type="checkbox">
+	 										<p>Видеосвязь</p>
+	 									</label>
+	 								</li>
+	 		
+	 								<li class="areas__item sel-grid__item">
+	 									<label>
+	 										<input class="square" type="checkbox">
+	 										<p>Зона для детей</p>
+	 									</label>
+	 								</li>
+	 								<li class="areas__item sel-grid__item">
+	 									<label>
+	 										<input class="square" type="checkbox">
+	 										<p>Гостиница</p>
+	 									</label>
+	 								</li>
+	 		
+	 								<li class="areas__item sel-grid__item">
+	 									<label>
+	 										<input class="square" type="checkbox">
+	 										<p>Зона для курения</p>
+	 									</label>
+	 								</li>
+	 								<li class="areas__item sel-grid__item">
+	 									<label>
+	 										<input class="square" type="checkbox">
+	 										<p>Джакузи</p>
+	 									</label>
+	 								</li>
+	 		
+	 								<li class="areas__item sel-grid__item">
+	 									<label>
+	 										<input class="square" type="checkbox">
+	 										<p>Зона для работы</p>
+	 									</label>
+	 								</li>
+	 								<li class="areas__item sel-grid__item">
+	 									<label>
+	 										<input class="square" type="checkbox">
+	 										<p>Кальян</p>
+	 									</label>
+	 								</li>
+	 		
+	 								<li class="areas__item sel-grid__item">
+	 									<label>
+	 										<input class="square" type="checkbox">
+	 										<p>Кафе (рядом/внутри здания)</p>
+	 									</label>
+	 								</li>
+	 								<li class="areas__item sel-grid__item">
+	 									<label>
+	 										<input class="square" type="checkbox">
+	 										<p>Камин</p>
+	 									</label>
+	 								</li>
+	 		
+	 								<li class="areas__item sel-grid__item">
+	 									<label>
+	 										<input class="square" type="checkbox">
+	 										<p>Кофемашина</p>
+	 									</label>
+	 								</li>
+	 								<li class="areas__item sel-grid__item">
+	 									<label>
+	 										<input class="square" type="checkbox">
+	 										<p>Парковка</p>
+	 									</label>
+	 								</li>
+	 		
+	 								<li class="areas__item sel-grid__item">
+	 									<label>
+	 										<input class="square" type="checkbox">
+	 										<p>Купель (для бань)</p>
+	 									</label>
+	 								</li>
+	 								<li class="areas__item sel-grid__item">
+	 									<label>
+	 										<input class="square" type="checkbox">
+	 										<p>Кулер</p>
+	 									</label>
+	 								</li>
+	 		
+	 								<li class="areas__item sel-grid__item">
+	 									<label>
+	 										<input class="square" type="checkbox">
+	 										<p>Место для кофебрейка</p>
+	 									</label>
+	 								</li>
+	 								<li class="areas__item sel-grid__item">
+	 									<label>
+	 										<input class="square" type="checkbox">
+	 										<p>Мангал</p>
+	 									</label>
+	 								</li>
+	 		
+	 								<li class="areas__item sel-grid__item">
+	 									<label>
+	 										<input class="square" type="checkbox">
+	 										<p>Место для рыбалки</p>
+	 									</label>
+	 								</li>
+	 								<li class="areas__item sel-grid__item">
+	 									<label>
+	 										<input class="square" type="checkbox">
+	 										<p>Плед</p>
+	 									</label>
+	 								</li>
+	 		
+	 								<li class="areas__item sel-grid__item">
+	 									<label>
+	 										<input class="square" type="checkbox">
+	 										<p>Ячейка для хранения личных вещей</p>
+	 									</label>
+	 								</li>
+	 								<li class="areas__item sel-grid__item">
+	 									<label>
+	 										<input class="square" type="checkbox">
+	 										<p>Сцена</p>
+	 									</label>
+	 								</li>
+	 		
+	 								<li class="areas__item sel-grid__item">
+	 									<label>
+	 										<input class="square" type="checkbox">
+	 										<p>На берегу водоёма</p>
+	 									</label>
+	 								</li>
+	 								<li class="areas__item sel-grid__item">
+	 									<label>
+	 										<input class="square" type="checkbox">
+	 										<p>Терраса</p>
+	 									</label>
+	 								</li>
+	 		
+	 								<li class="areas__item sel-grid__item">
+	 									<label>
+	 										<input class="square" type="checkbox">
+	 										<p>Очаг внутри беседки</p>
+	 									</label>
+	 								</li>
+	 								<li class="areas__item sel-grid__item">
+	 									<label>
+	 										<input class="square" type="checkbox">
+	 										<p>Ушат (в бане) </p>
+	 									</label>
+	 								</li>
+	 		
+	 								<li class="areas__item sel-grid__item">
+	 									<label>
+	 										<input class="square" type="checkbox">
+	 										<p>Панорамные окна</p>
+	 									</label>
+	 								</li>
+	 								<li class="areas__item sel-grid__item">
+	 									<label>
+	 										<input class="square" type="checkbox">
+	 										<p>Стул для кормления</p>
+	 									</label>
+	 								</li>
+	 		
+	 								<li class="areas__item sel-grid__item">
+	 									<label>
+	 										<input class="square" type="checkbox">
+	 										<p>Собственный дворик</p>
+	 									</label>
+	 								</li>
+	 								<li class="areas__item sel-grid__item">
+	 									<label>
+	 										<input class="square" type="checkbox">
+	 										<p>Чай, кофе и печенье</p>
+	 									</label>
+	 								</li>
+	 		
+	 								<li class="areas__item sel-grid__item">
+	 									<label>
+	 										<input class="square" type="checkbox">
+	 										<p>Стационарный мангал</p>
+	 									</label>
+	 								</li>
+	 								<li class="areas__item sel-grid__item">
+	 									<label>
+	 										<input class="square" type="checkbox">
+	 										<p>Чан (в бане)</p>
+	 									</label>
+	 								</li>
+	 		
+	 								<li class="areas__item sel-grid__item">
+	 									<label>
+	 										<input class="square" type="checkbox">
+	 										<p>Стул для кормления</p>
+	 									</label>
+	 								</li>
+	 								<li class="areas__item sel-grid__item">
+	 									<label>
+	 										<input class="square" type="checkbox">
+	 										<p>Шест</p>
+	 									</label>
+	 								</li>
+	 		
+	 								<li class="areas__item sel-grid__item">
+	 									<label>
+	 										<input class="square" type="checkbox">
+	 										<p>Цифровое телевидение</p>
+	 									</label>
+	 								</li>
+	 								<li class="areas__item sel-grid__item">
+	 									<label>
+	 										<input class="square" type="checkbox">
+	 										<p>Мини-бар</p>
+	 									</label>
+	 								</li>
+	 							</div>
+	 						</div>
+	 					</div>
+	 				</div>
+	 		
+	 				<div class="modal__bottom">
+	 					<p>Очистить</p>
+	 					<button class="btn btn--sm">Применить фильтры</button>
 	 				</div>
 	 			</div>
 	 		</section>
