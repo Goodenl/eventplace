@@ -2005,6 +2005,15 @@ span.checkmark {
     line-height: normal;
     font-weight: 500; }
 
+.swiper-container--pc {
+  width: 31.1rem;
+  height: 23.8rem;
+  overflow: hidden; }
+  .swiper-container--pc .btn-slider {
+    z-index: 2000; }
+  .swiper-container--pc .personal-room__slider-bottom {
+    z-index: 2000; }
+
 .search-btn {
   width: 12.5rem;
   border: none;

@@ -1442,6 +1442,10 @@ span.checkmark {
     display: none;
 }
 
+.nav__item label input {
+    display: none;
+}
+
 @media screen and (max-width: 768px) {
     .nav__item {
         padding-left: 3rem;
@@ -1620,22 +1624,30 @@ span.checkmark {
 }
 
 .popup-wrap.login .login-popup {
-    top: 10rem;
+    top: 4rem;
+    max-height: 81.1rem;
+    min-height: 81.1rem;
 }
 
 .logup-popup__content h2 {
     margin-bottom: 3rem;
 }
 
+.popup-wrap.logup .logup-popup {
+    max-height: 59.4rem;
+    min-height: 59.4rem;
+}
+
 .popup-wrap {
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     left: 0;
     bottom: 0;
+    height: 100%;
+    padding-bottom: 2rem;
+    overflow-y: scroll;
     display: none;
-    -ms-flex-align: center;
-    align-items: center;
     -ms-flex-pack: center;
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.6);
@@ -1746,6 +1758,7 @@ span.checkmark {
     color: #A9A9A9;
     font-size: 1.4rem;
     margin-bottom: 3rem;
+    text-decoration: none;
 }
 
 .popup__content a.small-text {
@@ -2430,6 +2443,7 @@ span.checkmark {
 .nested__btn-box {
     gap: 3rem;
     margin-bottom: 3rem;
+    position: relative;
 }
 
 .nested__photo-list {
@@ -2789,6 +2803,53 @@ span.checkmark {
 
 .personal-room__text .form__label {
     color: #A9A9A9;
+}
+
+.add-picture-box {
+    width: 9.6rem;
+    position: absolute;
+    display: none;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: .6rem 1.4rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.12);
+    top: -123px;
+    left: 60px;
+}
+
+.add-picture-box.show {
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.add-picture__item {
+    width: 2.8rem;
+    padding: 0.8rem 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.add-picture__item:not(:last-child) {
+    border-bottom: 1px solid #CFCFCF;
+}
+
+.add-picture__item.blocked p {
+    color: #008C8C;
+}
+
+.add-picture__item p {
+    font-weight: 1.6rem;
+    line-height: normal;
+    font-weight: 500;
 }
 
 .search-btn {
@@ -3642,7 +3703,7 @@ span.checkmark {
     display: flex;
 }
 
-.litepicker-popup .btn {
+.litepicker-popup .btn, .litepicker-popup select {
     width: 14rem;
     position: absolute;
     bottom: 0;
@@ -3650,8 +3711,50 @@ span.checkmark {
     z-index: 9999;
 }
 
+.litepicker-popup select {
+    left: 0 !important;
+    border-radius: 30px;
+    height: 4.3rem;
+    width: 11.6rem;
+    background-position-y: 17px;
+    background-position-x: calc(100% - 15px);
+    font-size: 1.6rem !important;
+}
+
+.litepicker-popup select:nth-child(1) {
+    left: calc(45% - 30rem) !important;
+}
+
+.litepicker-popup select:nth-child(2) {
+    left: calc(45% - 17rem) !important;
+}
+
 .litepicker-popup .litepicker {
     top: 0 !important;
     left: calc(42.5% - 76.9rem/2) !important;
     z-index: 9998 !important;
+}
+
+.litepicker-popup .litepicker .container__months {
+    border-radius: 30px !important;
+}
+
+.count-quest--enet {
+    top: 23rem;
+}
+
+.type-activity--enet {
+    top: 23rem;
+}
+
+.litepicker-popup--enet {
+    top: 23rem;
+}
+
+.litepicker-popup--enet .button-apply {
+    bottom: 3rem;
+}
+
+.container__footer {
+    display: none !important;
 }
