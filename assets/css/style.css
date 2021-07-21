@@ -1138,12 +1138,6 @@ label {
     position: relative;
 }
 
-.form__group.PP .form__field {
-    height: 56px;
-    border-radius: 8px;
-    background-position-y: 24px;
-}
-
 .form__group.PP .form__field:-moz-placeholder-shown ~ .form__label {
     top: 20px;
     background-color: #ffffff;
@@ -2021,6 +2015,9 @@ span.checkmark {
 
 .personal-room__box--PP .form__field {
     border-radius: 8px;
+    height: 56px;
+    border-radius: 8px;
+    background-position-y: 24px;
 }
 
 .personal-room__box--PP select.form__field {
@@ -2852,6 +2849,20 @@ span.checkmark {
     font-weight: 500;
 }
 
+.swiper-container--pc {
+    width: 31.1rem;
+    height: 23.8rem;
+    overflow: hidden;
+}
+
+.swiper-container--pc .btn-slider {
+    z-index: 2000;
+}
+
+.swiper-container--pc .personal-room__slider-bottom {
+    z-index: 2000;
+}
+
 .search-btn {
     width: 12.5rem;
     border: none;
@@ -3483,6 +3494,7 @@ span.checkmark {
     right: 0;
     bottom: 0;
     padding: 1.5rem;
+    z-index: 2000;
 }
 
 .catalog__interface button {
@@ -3751,10 +3763,11 @@ span.checkmark {
     top: 23rem;
 }
 
-.litepicker-popup--enet .button-apply {
-    bottom: 3rem;
-}
-
 .container__footer {
     display: none !important;
+}
+
+.swiper-container--ct {
+    width: calc(100% / 3 - 10px);
+    height: 25.9rem;
 }

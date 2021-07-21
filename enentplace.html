@@ -148,15 +148,16 @@
 	 							<label >
 	 								<input type="text" id="litepicker-start"/>
 	 								<p>Начало</p>
+	 								<span>Когда?</span>
 	 							</label>
-	 							<span>Когда?</span>
+	 							
 	 						</li>
 	 						<li class="nav__item">
 	 							<label >
 	 								<input type="text" id="litepicker-end"/>
 	 								<p>Конец</p>
+	 								<span>Когда?</span>
 	 							</label>
-	 							<span>Когда?</span>
 	 						</li>
 	 						<li class="nav__item count-quest-btn">
 	 							<p>Количество гостей</p>
@@ -193,7 +194,7 @@
 	 			</div>
 	 		</section>
 	 		
-	 		<section class="count-quest count-quest--enet">
+	 		<section class="count-quest count-quest--enet nav-popup">
 	 			<ul class="count-quest__list">
 	 				<li class="count-quest__item">
 	 					<div class="text-wrap">
@@ -202,7 +203,7 @@
 	 					</div>
 	 		
 	 					<div class="btn-wrap">
-	 						<button class="btn btn--xsm">
+	 						<button class="btn btn--xsm" data-do="minus">
 	 							<svg width="14" height="1" viewBox="0 0 14 1" fill="none" xmlns="http://www.w3.org/2000/svg">
 	 							<rect width="14" height="1" fill="#C4C4C4"/>
 	 							</svg>
@@ -210,7 +211,7 @@
 	 		
 	 						<span>0</span>
 	 		
-	 						<button class="btn btn--xsm">
+	 						<button class="btn btn--xsm" data-do="plus">
 	 							<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
 	 							<rect y="6.5625" width="14" height="0.875" fill="#353535"/>
 	 							<rect x="7.4375" width="14" height="0.875" transform="rotate(90 7.4375 0)" fill="#353535"/>
@@ -226,7 +227,7 @@
 	 					</div>
 	 					
 	 					<div class="btn-wrap">
-	 						<button class="btn btn--xsm">
+	 						<button class="btn btn--xsm" data-do="minus">
 	 							<svg width="14" height="1" viewBox="0 0 14 1" fill="none" xmlns="http://www.w3.org/2000/svg">
 	 							<rect width="14" height="1" fill="#C4C4C4"/>
 	 							</svg>
@@ -234,7 +235,7 @@
 	 		
 	 						<span>0</span>
 	 		
-	 						<button class="btn btn--xsm">
+	 						<button class="btn btn--xsm" data-do="plus">
 	 							<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
 	 							<rect y="6.5625" width="14" height="0.875" fill="#353535"/>
 	 							<rect x="7.4375" width="14" height="0.875" transform="rotate(90 7.4375 0)" fill="#353535"/>
@@ -250,7 +251,7 @@
 	 					</div>
 	 					
 	 					<div class="btn-wrap">
-	 						<button class="btn btn--xsm">
+	 						<button class="btn btn--xsm" data-do="minus">
 	 							<svg width="14" height="1" viewBox="0 0 14 1" fill="none" xmlns="http://www.w3.org/2000/svg">
 	 							<rect width="14" height="1" fill="#C4C4C4"/>
 	 							</svg>
@@ -258,7 +259,7 @@
 	 		
 	 						<span>0</span>
 	 		
-	 						<button class="btn btn--xsm">
+	 						<button class="btn btn--xsm" data-do="plus">
 	 							<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
 	 							<rect y="6.5625" width="14" height="0.875" fill="#353535"/>
 	 							<rect x="7.4375" width="14" height="0.875" transform="rotate(90 7.4375 0)" fill="#353535"/>
@@ -269,7 +270,7 @@
 	 			</ul>
 	 		</section>
 	 		
-	 		<section class="type-activity type-activity--enet">
+	 		<section class="type-activity type-activity--enet nav-popup">
 	 			<ul class="type-activity__list">
 	 				<h3>Праздник</h3>
 	 				<li class="type-activity__item">
@@ -412,12 +413,43 @@
 	 			</ul>
 	 		</section>
 	 		
-	 		<section class="litepicker-popup litepicker-popup--enet">
+	 		<section class="litepicker-popup litepicker-popup--enet nav-popup">
 	 			<select name="" class="form__field">
 	 				<option selected="">Начало</option>
+	 				<option>9:00</option>
+	 				<option>10:00</option>
+	 				<option>11:00</option>
+	 				<option>12:00</option>
+	 				<option>13:00</option>
+	 				<option>14:00</option>
+	 				<option>15:00</option>
+	 				<option>16:00</option>
+	 				<option>17:00</option>
+	 				<option>18:00</option>
+	 				<option>19:00</option>
+	 				<option>20:00</option>
+	 				<option>21:00</option>
+	 				<option>22:00</option>
+	 				<option>23:00</option>
 	 			</select>
+	 		
 	 			<select name="" class="form__field">
 	 				<option selected="">Конец</option>
+	 				<option>9:00</option>
+	 				<option>10:00</option>
+	 				<option>11:00</option>
+	 				<option>12:00</option>
+	 				<option>13:00</option>
+	 				<option>14:00</option>
+	 				<option>15:00</option>
+	 				<option>16:00</option>
+	 				<option>17:00</option>
+	 				<option>18:00</option>
+	 				<option>19:00</option>
+	 				<option>20:00</option>
+	 				<option>21:00</option>
+	 				<option>22:00</option>
+	 				<option>23:00</option>
 	 			</select>
 	 		
 	 			<button class="btn button-apply btn--sm">Сохранить</button>
