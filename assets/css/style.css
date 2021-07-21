@@ -772,7 +772,7 @@ label {
     position: absolute;
     top: 180px;
     left: 90px;
-    z-index: 200;
+    z-index: 3000;
 }
 
 .modal-sec.show {
