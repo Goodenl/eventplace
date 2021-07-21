@@ -667,6 +667,7 @@ label {
     margin-bottom: 2.4rem;
     padding-top: 1.8rem;
     position: relative;
+    overflow: auto;
 }
 
 .footer-soc__list:before {
@@ -1623,6 +1624,12 @@ span.checkmark {
     min-height: 81.1rem;
 }
 
+@media screen and (max-width: 768px) {
+    .popup-wrap.login .login-popup {
+        min-height: 88.1rem;
+    }
+}
+
 .logup-popup__content h2 {
     margin-bottom: 3rem;
 }
@@ -1645,7 +1652,7 @@ span.checkmark {
     -ms-flex-pack: center;
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.6);
-    z-index: 2000;
+    z-index: 2010;
 }
 
 .popup-wrap.show {
@@ -1669,6 +1676,12 @@ span.checkmark {
     background-color: #ffffff;
     border-radius: 8px;
     top: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+    .popup {
+        width: 37.8rem;
+    }
 }
 
 .popup__header {
@@ -1789,8 +1802,20 @@ span.checkmark {
     min-width: 51.8rem;
 }
 
+@media screen and (max-width: 768px) {
+    .popup__content .btn-reg {
+        min-width: 31.8rem;
+    }
+}
+
 .popup__content .btn-log {
     min-width: 51.8rem;
+}
+
+@media screen and (max-width: 768px) {
+    .popup__content .btn-log {
+        min-width: 31.8rem;
+    }
 }
 
 .popup__content .acc-exist {
@@ -1827,6 +1852,12 @@ span.checkmark {
     width: 51.8rem;
     border: 1px solid #AFAFAF;
     border-radius: 8px;
+}
+
+@media screen and (max-width: 768px) {
+    .popup__content .help-soc__btn {
+        width: 31.8rem;
+    }
 }
 
 .popup__content .help-soc__btn img {
@@ -3723,6 +3754,13 @@ span.checkmark {
     z-index: 9999;
 }
 
+@media screen and (max-width: 768px) {
+    .litepicker-popup .btn, .litepicker-popup select {
+        bottom: 3rem;
+        left: calc(40%) !important;
+    }
+}
+
 .litepicker-popup select {
     left: 0 !important;
     border-radius: 30px;
@@ -3749,6 +3787,37 @@ span.checkmark {
 
 .litepicker-popup .litepicker .container__months {
     border-radius: 30px !important;
+}
+
+@media screen and (max-width: 768px) {
+    .litepicker-popup .litepicker {
+        top: 0 !important;
+        left: calc(50% - 20rem) !important;
+        right: 0;
+        z-index: 9998 !important;
+        width: 33rem;
+    }
+
+    .litepicker-popup .litepicker .container__months {
+        border-radius: 30px !important;
+        width: 100%;
+        padding: 1.7rem 2.8rem 8.5rem;
+    }
+
+    .litepicker-popup .litepicker .container__months .month-item:nth-child(1) {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 618px) {
+    .litepicker-popup .litepicker {
+        left: calc(50% - 16rem) !important;
+    }
+
+    .litepicker-popup .litepicker .month-item {
+        margin-right: 0;
+        display: block !important;
+    }
 }
 
 .count-quest--enet {

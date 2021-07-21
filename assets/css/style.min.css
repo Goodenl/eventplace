@@ -1043,9 +1043,11 @@ span.checkmark {
       .nav__item p {
         font-size: 1.4rem;
         margin-bottom: 1.6rem;
-        line-height: normal; }
+        line-height: normal;
+        white-space: pre; }
       .nav__item span {
-        line-height: normal; }
+        line-height: normal;
+        white-space: pre; }
       .nav__item br {
         display: block; }
       .nav__item:nth-child(1) {
@@ -2329,6 +2331,9 @@ span.checkmark {
       stroke: #AAAAAA; }
   .custom-swiper-btn.swiper-btn-prev svg {
     transform: rotate(180deg); }
+  @media screen and (max-width: 375px) {
+    .custom-swiper-btn {
+      display: none; } }
 
 .swiper__btn-box {
   display: flex;
