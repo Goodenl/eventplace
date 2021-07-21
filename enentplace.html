@@ -116,7 +116,7 @@
     					<path d="M14.7668 0C6.5625 0 0.151442 7.59615 0.151442 7.59615C-0.0504808 7.82692 -0.0504808 8.17308 0.151442 8.40385C0.151442 8.40385 6.5625 16 14.7668 16C22.9712 16 29.3822 8.40385 29.3822 8.40385C29.5841 8.17308 29.5841 7.82692 29.3822 7.59615C29.3822 7.59615 22.9712 0 14.7668 0ZM14.7668 1.23077C16.3846 1.23077 17.9303 1.5649 19.363 2.07692C20.3245 3.16346 20.9207 4.58414 20.9207 6.15385C20.9207 9.5601 18.1731 12.3077 14.7668 12.3077C11.3606 12.3077 8.61298 9.5601 8.61298 6.15385C8.61298 4.58414 9.1899 3.16346 10.1514 2.07692C11.5889 1.5625 13.1442 1.23077 14.7668 1.23077ZM8.11298 2.98077C7.65144 3.94231 7.38221 5.01923 7.38221 6.15385C7.38221 10.226 10.6947 13.5385 14.7668 13.5385C18.8389 13.5385 22.1514 10.226 22.1514 6.15385C22.1514 5.02404 21.8942 3.94231 21.4399 2.98077C24.9159 4.7476 27.4159 7.3101 28.0553 8C27.0553 9.08173 21.5192 14.7692 14.7668 14.7692C8.01442 14.7692 2.47837 9.08173 1.47837 8C2.11779 7.30769 4.62981 4.7476 8.11298 2.98077ZM14.7668 3.07692C13.0673 3.07692 11.6899 4.45433 11.6899 6.15385C11.6899 7.85337 13.0673 9.23077 14.7668 9.23077C16.4663 9.23077 17.8437 7.85337 17.8437 6.15385C17.8437 4.45433 16.4663 3.07692 14.7668 3.07692Z" fill="#ACACAC"/>
     				</svg>
     			</div>
-    			<a class="small-text">Забыли пароль?</a>
+    			<a href="#" class="small-text">Забыли пароль?</a>
     
     			<button class="btn btn--sm btn-log">Войти</button>
     
@@ -140,19 +140,25 @@
 	 			<div class="container">
 	 				<nav class="nav xs-hide">
 	 					<ul class="nav__list">
-	 						<li class="nav__item">
+	 						<li class="nav__item type-activity-btn">
 	 							<p>Тип события</p>
 	 							<span>Выберете своё <br>мероприятие</span>
 	 						</li>
 	 						<li class="nav__item">
-	 							<p>Начало</p>
+	 							<label >
+	 								<input type="text" id="litepicker-start"/>
+	 								<p>Начало</p>
+	 							</label>
 	 							<span>Когда?</span>
 	 						</li>
 	 						<li class="nav__item">
-	 							<p>Конец</p>
+	 							<label >
+	 								<input type="text" id="litepicker-end"/>
+	 								<p>Конец</p>
+	 							</label>
 	 							<span>Когда?</span>
 	 						</li>
-	 						<li class="nav__item">
+	 						<li class="nav__item count-quest-btn">
 	 							<p>Количество гостей</p>
 	 							<span>Кто приедет?</span>
 	 						</li>
@@ -185,6 +191,236 @@
 	 					</div>
 	 				</div>
 	 			</div>
+	 		</section>
+	 		
+	 		<section class="count-quest count-quest--enet">
+	 			<ul class="count-quest__list">
+	 				<li class="count-quest__item">
+	 					<div class="text-wrap">
+	 						<h3>Взрослые</h3>
+	 						<p>От 13 лет</p>
+	 					</div>
+	 		
+	 					<div class="btn-wrap">
+	 						<button class="btn btn--xsm">
+	 							<svg width="14" height="1" viewBox="0 0 14 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+	 							<rect width="14" height="1" fill="#C4C4C4"/>
+	 							</svg>
+	 						</button>
+	 		
+	 						<span>0</span>
+	 		
+	 						<button class="btn btn--xsm">
+	 							<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+	 							<rect y="6.5625" width="14" height="0.875" fill="#353535"/>
+	 							<rect x="7.4375" width="14" height="0.875" transform="rotate(90 7.4375 0)" fill="#353535"/>
+	 							</svg>
+	 						</button>
+	 					</div>
+	 				</li>
+	 		
+	 				<li class="count-quest__item">
+	 					<div class="text-wrap">
+	 						<h3>Дети</h3>
+	 						<p>От 2 до 12 лет</p>
+	 					</div>
+	 					
+	 					<div class="btn-wrap">
+	 						<button class="btn btn--xsm">
+	 							<svg width="14" height="1" viewBox="0 0 14 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+	 							<rect width="14" height="1" fill="#C4C4C4"/>
+	 							</svg>
+	 						</button>
+	 		
+	 						<span>0</span>
+	 		
+	 						<button class="btn btn--xsm">
+	 							<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+	 							<rect y="6.5625" width="14" height="0.875" fill="#353535"/>
+	 							<rect x="7.4375" width="14" height="0.875" transform="rotate(90 7.4375 0)" fill="#353535"/>
+	 							</svg>
+	 						</button>
+	 					</div>
+	 				</li>
+	 		
+	 				<li class="count-quest__item">
+	 					<div class="text-wrap">
+	 						<h3>Младенцы</h3>
+	 						<p>До 2 лет</p>
+	 					</div>
+	 					
+	 					<div class="btn-wrap">
+	 						<button class="btn btn--xsm">
+	 							<svg width="14" height="1" viewBox="0 0 14 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+	 							<rect width="14" height="1" fill="#C4C4C4"/>
+	 							</svg>
+	 						</button>
+	 		
+	 						<span>0</span>
+	 		
+	 						<button class="btn btn--xsm">
+	 							<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+	 							<rect y="6.5625" width="14" height="0.875" fill="#353535"/>
+	 							<rect x="7.4375" width="14" height="0.875" transform="rotate(90 7.4375 0)" fill="#353535"/>
+	 							</svg>
+	 						</button>
+	 					</div>
+	 				</li>
+	 			</ul>
+	 		</section>
+	 		
+	 		<section class="type-activity type-activity--enet">
+	 			<ul class="type-activity__list">
+	 				<h3>Праздник</h3>
+	 				<li class="type-activity__item">
+	 					День рождения
+	 				</li>
+	 				<li class="type-activity__item">
+	 					Вечеринка
+	 				</li>
+	 				<li class="type-activity__item">
+	 					Свадьба
+	 				</li>
+	 				<li class="type-activity__item">
+	 					Детский день рождения
+	 				</li>
+	 				<li class="type-activity__item">
+	 					Выпускной
+	 				</li>
+	 				<li class="type-activity__item">
+	 					Девичник
+	 				</li>
+	 				<li class="type-activity__item">
+	 					Мальчишник
+	 				</li>
+	 			</ul>
+	 		
+	 			<ul class="type-activity__list">
+	 				<h3>Развлекательное</h3>
+	 				<li class="type-activity__item">
+	 					Модный показ
+	 				</li>
+	 				<li class="type-activity__item">
+	 					Диско
+	 				</li>
+	 				<li class="type-activity__item">
+	 					Концерт
+	 				</li>
+	 				<li class="type-activity__item">
+	 					Кулинарный мастер-класс
+	 				</li>
+	 				<li class="type-activity__item">
+	 					Музыкальный вечер
+	 				</li>
+	 				<li class="type-activity__item">
+	 					Литературный вечер
+	 				</li>
+	 				<li class="type-activity__item">
+	 					Квартирник
+	 				</li>
+	 				<li class="type-activity__item">
+	 					Коктейльная вечеринка
+	 				</li>
+	 			</ul>
+	 		
+	 			<ul class="type-activity__list">
+	 				<h3>Съёмки</h3>
+	 				<li class="type-activity__item">
+	 					Онлайн-трансляции
+	 				</li>
+	 				<li class="type-activity__item">
+	 					Онлайн-конференция
+	 				</li>
+	 				<li class="type-activity__item">
+	 					Онлайн-обучение
+	 				</li>
+	 				<li class="type-activity__item">
+	 					Онлайн-переговоры, совещания
+	 				</li>
+	 				<li class="type-activity__item">
+	 					Видеосъемка
+	 				</li>
+	 				<li class="type-activity__item">
+	 					Фотосъемка
+	 				</li>
+	 				<li class="type-activity__item">
+	 					Репетиция
+	 				</li>
+	 				<li class="type-activity__item">
+	 					Свадебная фотосессия
+	 				</li>
+	 			</ul>
+	 		
+	 			<ul class="type-activity__list">
+	 				<h3>Деловое</h3>
+	 				<li class="type-activity__item">
+	 					Корпоративы
+	 				</li>
+	 				<li class="type-activity__item">
+	 					Деловая встреча
+	 				</li>
+	 				<li class="type-activity__item">
+	 					Конференция
+	 				</li>
+	 				<li class="type-activity__item">
+	 					Тренинги и мастер классы
+	 				</li>
+	 				<li class="type-activity__item">
+	 					Воркшоп
+	 				</li>
+	 				<li class="type-activity__item">
+	 					Презентация
+	 				</li>
+	 				<li class="type-activity__item">
+	 					Лекция
+	 				</li>
+	 				<li class="type-activity__item">
+	 					Хакатон
+	 				</li>
+	 				<li class="type-activity__item">
+	 					Презентация авто.
+	 				</li>
+	 			</ul>
+	 		
+	 			<ul class="type-activity__list">
+	 				<h3>Попап</h3>
+	 				<li class="type-activity__item">
+	 					Выставка
+	 				</li>
+	 				<li class="type-activity__item">
+	 					Попап-макет
+	 				</li>
+	 			</ul>
+	 		
+	 			<ul class="type-activity__list">
+	 				<h3>Другое</h3>
+	 				<li class="type-activity__item">
+	 					Занятия танцами
+	 				</li>
+	 				<li class="type-activity__item">
+	 					Йога
+	 				</li>
+	 				<li class="type-activity__item">
+	 					Спид-дейтинг
+	 				</li>
+	 				<li class="type-activity__item">
+	 					Популярные площадки
+	 				</li>
+	 				<li class="type-activity__item">
+	 					Вечер памяти
+	 				</li>
+	 			</ul>
+	 		</section>
+	 		
+	 		<section class="litepicker-popup litepicker-popup--enet">
+	 			<select name="" class="form__field">
+	 				<option selected="">Начало</option>
+	 			</select>
+	 			<select name="" class="form__field">
+	 				<option selected="">Конец</option>
+	 			</select>
+	 		
+	 			<button class="btn button-apply btn--sm">Сохранить</button>
 	 		</section>
 	 		
 	 		<section class="grid-section">
