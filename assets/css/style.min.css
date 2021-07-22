@@ -427,6 +427,9 @@ label {
     .xs-show {
       display: flex !important; } }
 
+.bufer {
+  display: none; }
+
 /* Blocks */
 .header {
   width: 100%;
@@ -477,17 +480,13 @@ label {
 .content {
   padding: 10rem 0 0 0; }
   .content--enet {
-    padding: 13rem 0 0 0;
-    background-image: url("../../assets/images/main-bg.svg");
-    background-position: top;
-    background-size: 120% 20%;
-    background-repeat: no-repeat; }
-    @media screen and (max-width: 768px) {
-      .content--enet {
-        background-size: 114% 14%; } }
+    padding: 13rem 0 0 0; }
     @media screen and (max-width: 375px) {
       .content--enet {
-        background-size: 120% 6.5%; } }
+        background-image: url("../../assets/images/main-bg.svg");
+        background-position: top;
+        background-size: 120% 6.5%;
+        background-repeat: no-repeat; } }
   @media screen and (max-width: 768px) {
     .content {
       padding: 11rem 0 0 0; } }
@@ -1026,6 +1025,11 @@ span.checkmark {
   padding-left: 2rem; }
   .nav__item:not(:nth-child(1)) {
     border-left: 1px solid #DDDDDD; }
+  .nav__item:nth-child(1) {
+    max-width: 24rem; }
+    @media screen and (max-width: 768px) {
+      .nav__item:nth-child(1) {
+        max-width: 14rem; } }
   .nav__item p {
     font-size: 1.6rem;
     color: #144747;
@@ -1038,22 +1042,24 @@ span.checkmark {
     display: none; }
   @media screen and (max-width: 768px) {
     .nav__item {
-      padding-left: 3rem;
-      padding-right: 3rem; }
+      padding-right: 2rem;
+      display: flex;
+      align-items: center; }
       .nav__item p {
         font-size: 1.4rem;
-        margin-bottom: 1.6rem;
+        margin-bottom: 0;
         line-height: normal;
         white-space: pre; }
       .nav__item span {
-        line-height: normal;
-        white-space: pre; }
+        display: none; }
       .nav__item br {
         display: block; }
       .nav__item:nth-child(1) {
-        margin-right: 2rem; }
-        .nav__item:nth-child(1) p {
-          margin-bottom: 0.8rem; } }
+        margin-right: 2rem; } }
+  @media only screen and (max-width: 644px) {
+    .nav__item {
+      padding-left: 1rem;
+      padding-right: 1rem; } }
 
 .nav {
   margin: 0 auto;
@@ -2071,7 +2077,14 @@ span.checkmark {
 
 .preview {
   height: 60rem;
-  position: relative; }
+  position: relative;
+  background-image: url("../../assets/images/main-bg.svg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+  @media screen and (max-width: 375px) {
+    .preview {
+      background: none; } }
   .preview .preview__pagination {
     display: flex;
     position: absolute;
@@ -2612,6 +2625,8 @@ span.checkmark {
     .litepicker-popup select:nth-child(2) {
       left: calc(45% - 17rem) !important; }
   .litepicker-popup .litepicker {
+    display: block !important;
+    position: absolute !important;
     top: 0 !important;
     left: calc(42.5% - 76.9rem/2) !important;
     z-index: 9998 !important; }
@@ -2647,7 +2662,40 @@ span.checkmark {
   top: 23rem; }
 
 .container__footer {
-  display: none !important; }
+  height: 0;
+  padding: 0 !important;
+  background-color: transparent; }
+  .container__footer * {
+    display: none; }
+  .container__footer .button-apply {
+    box-sizing: border-box;
+    margin: 0;
+    text-transform: none;
+    -webkit-appearance: button;
+    display: inline-block;
+    vertical-align: top;
+    background-color: #B13957 !important;
+    border: none;
+    border-radius: 3em !important;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1.6rem;
+    line-height: normal;
+    font-weight: 500;
+    color: #ffffff;
+    text-decoration: none;
+    box-shadow: 0 10px 15px rgba(177, 57, 87, 0.2) !important;
+    max-width: 22rem !important;
+    padding: 1.1rem 0 !important;
+    width: 14rem !important;
+    position: absolute;
+    bottom: 4rem;
+    left: calc(42.5% - 76.9rem/1.8 + 76.9rem) !important;
+    z-index: 9999; }
+    @media screen and (max-width: 768px) {
+      .container__footer .button-apply {
+        bottom: 3rem;
+        left: calc(40%) !important; } }
 
 .swiper-container--ct {
   width: calc(100% / 3 - 10px);

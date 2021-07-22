@@ -1451,10 +1451,12 @@ span.checkmark {
         font-size: 1.4rem;
         margin-bottom: 1.6rem;
         line-height: normal;
+        white-space: pre;
     }
 
     .nav__item span {
         line-height: normal;
+        white-space: pre;
     }
 
     .nav__item br {
@@ -3360,6 +3362,12 @@ span.checkmark {
 .custom-swiper-btn.swiper-btn-prev svg {
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
+}
+
+@media screen and (max-width: 375px) {
+    .custom-swiper-btn {
+        display: none;
+    }
 }
 
 .swiper__btn-box {

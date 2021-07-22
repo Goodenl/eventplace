@@ -144,20 +144,19 @@
 	 							<p>Тип события</p>
 	 							<span>Выберете своё <br>мероприятие</span>
 	 						</li>
-	 						<li class="nav__item">
-	 							<label >
-	 								<input type="text" id="litepicker-start"/>
-	 								<p>Начало</p>
-	 								<span>Когда?</span>
-	 							</label>
-	 							
+	 						<li class="nav__item startTimeBtn">
+	 							<p>Начало</p>
+	 							<span class="startDate">Когда?</span>
+	 							<div>
+	 								<span class="startTime"></span>
+	 							</div>
 	 						</li>
-	 						<li class="nav__item">
-	 							<label >
-	 								<input type="text" id="litepicker-end"/>
-	 								<p>Конец</p>
-	 								<span>Когда?</span>
-	 							</label>
+	 						<li class="nav__item endTimeBtn">
+	 							<p>Конец</p>
+	 							<span class="endDate">Когда?</span>
+	 							<div>
+	 								<span class="endTime"></span>
+	 							</div>
 	 						</li>
 	 						<li class="nav__item count-quest-btn">
 	 							<p>Количество гостей</p>
@@ -414,45 +413,48 @@
 	 		</section>
 	 		
 	 		<section class="litepicker-popup litepicker-popup--enet nav-popup">
-	 			<select name="" class="form__field">
+	 			<select name="start" class="form__field">
 	 				<option selected="">Начало</option>
-	 				<option>9:00</option>
-	 				<option>10:00</option>
-	 				<option>11:00</option>
-	 				<option>12:00</option>
-	 				<option>13:00</option>
-	 				<option>14:00</option>
-	 				<option>15:00</option>
-	 				<option>16:00</option>
-	 				<option>17:00</option>
-	 				<option>18:00</option>
-	 				<option>19:00</option>
-	 				<option>20:00</option>
-	 				<option>21:00</option>
-	 				<option>22:00</option>
-	 				<option>23:00</option>
+	 				<option>9-00</option>
+	 				<option>10-00</option>
+	 				<option>11-00</option>
+	 				<option>12-00</option>
+	 				<option>13-00</option>
+	 				<option>14-00</option>
+	 				<option>15-00</option>
+	 				<option>16-00</option>
+	 				<option>17-00</option>
+	 				<option>18-00</option>
+	 				<option>19-00</option>
+	 				<option>20-00</option>
+	 				<option>21-00</option>
+	 				<option>22-00</option>
+	 				<option>23-00</option>
 	 			</select>
 	 		
-	 			<select name="" class="form__field">
+	 			<select name="end" class="form__field">
 	 				<option selected="">Конец</option>
-	 				<option>9:00</option>
-	 				<option>10:00</option>
-	 				<option>11:00</option>
-	 				<option>12:00</option>
-	 				<option>13:00</option>
-	 				<option>14:00</option>
-	 				<option>15:00</option>
-	 				<option>16:00</option>
-	 				<option>17:00</option>
-	 				<option>18:00</option>
-	 				<option>19:00</option>
-	 				<option>20:00</option>
-	 				<option>21:00</option>
-	 				<option>22:00</option>
-	 				<option>23:00</option>
+	 				<option>9-00</option>
+	 				<option>10-00</option>
+	 				<option>11-00</option>
+	 				<option>12-00</option>
+	 				<option>13-00</option>
+	 				<option>14-00</option>
+	 				<option>15-00</option>
+	 				<option>16-00</option>
+	 				<option>17-00</option>
+	 				<option>18-00</option>
+	 				<option>19-00</option>
+	 				<option>20-00</option>
+	 				<option>21-00</option>
+	 				<option>22-00</option>
+	 				<option>23-00</option>
 	 			</select>
 	 		
-	 			<button class="btn button-apply btn--sm">Сохранить</button>
+	 		</section>
+	 		
+	 		<section class="bufer">
+	 			<div class="litepickerBuffer"></div>
 	 		</section>
 	 		
 	 		<section class="grid-section">
