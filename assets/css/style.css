@@ -2025,6 +2025,7 @@ span.checkmark {
     color: #000000;
     font-weight: 400;
     line-height: normal;
+    transition: color .2s ease;
 }
 
 .type-activity__item.active {
