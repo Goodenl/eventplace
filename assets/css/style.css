@@ -2027,6 +2027,11 @@ span.checkmark {
     line-height: normal;
 }
 
+.type-activity__item.active {
+    color: #008c8c;
+    font-weight: 500;
+}
+
 .type-activity__item::marker {
     font-size: 1.2em;
     color: #008C8C;
